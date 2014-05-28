@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Dominican Republic <h4 class="sub">Sustainable Infrastructure</h4></div>
+
+    <div id="content" style="overflow: hidden;">
+
+        <%
+            dominican_republic_program_description = 'Our international project team works with communities outside of the US on projects that the they themselves have expressed a need for. Our projects require a minimum 5 year commitment and are geared toward empowering, teaching and working with these communities rather than implementing our solution and leaving. It is very important that the community feels a sense of ownership and empowerment and we be used as a resource. In this way the sustainability of the project is ensured. Upon their request, our engineers use our skillsets to provide them with viable solutions to common problems like lack of fresh water, unsanitary waste disposal, infrastructure issues, poor indoor air quality, insufficient electricity, and much more!
+                Request a project HERE'
+
+            dominican_republic_program_status = "We are currently in the assessment phase of several potential projects in the Dominican Republic. UCF's College of Medicine (MedPact) has been working in 6 impoverished communities for several years and have identified specific health problems relating to lack of freshwater, lack of nutritional food, poor indoor air quality, lack of sanitation, etc. Our assessment trip this July 2014 is geared towards assessing potential viable solutions based on the needs that each community expresses. Then, the community leaders must submit a formal request to EWB-USA stating their need and requesting help. At that point, we have a green light and can spend the next 5 years (minimum) working with the community! We will focus on empowering them to help us build a viable and sustainable solution so they have access so many basic things that we all tend to take for granted!"
+        %>
+
+        <%= raw project 'About', dominican_republic_program_description %>
+
+        <%= raw project 'Status', dominican_republic_program_status %>
+        
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>
