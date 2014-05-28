@@ -1,0 +1,62 @@
+<% 
+    # if home page 
+    home = current_page?('/') ? 'home' : 'not-home'
+
+%>
+
+<nav class="<%= home %>">
+	
+    <% # main logo for navbar %>
+    <%= link_to image_tag("logo3.png"),  '/' %>
+
+
+	<ul>
+        <%= raw li 'About', '/about' %>
+
+        <li> <%= link_to 'Our People', '#' %>
+    	    <ul>
+                <span class="nav">
+                    <%= raw li 'Executive Board'   , '/exec_board'         %>
+                    <%= raw li 'Intl Project Team' , '/intl_project_team'  %>
+                    <%= raw li 'Local Project Team', '/local_project_team' %>
+                    <%= raw li 'Software Team'     , '/software_team'      %>
+                    <%= raw li 'Alumni'            , '/alumni'             %>
+                    <%= raw li 'Our Partners'      , '/partners'           %>
+                </span>
+    	    </ul>	
+        </li>
+
+        <li> <%= link_to 'Our Projects', '#' %>             
+            <ul> 
+                <span class="nav"> 
+                    <%= raw li 'International Projects', '/projects/international' %> 
+                    <%= raw li 'LocalProjects'         , '/projects/local'         %> 
+                    <%= raw li 'Software Projects'     , '/projects/software'      %> 
+                    <%= raw li 'Other Projects'        , '/projects/other'         %> 
+                </span>             
+            </ul>         
+        </li>
+
+	    <li> <%= link_to 'Media', '/media' %>
+		    <ul>
+                <span class="nav">
+                    <%= raw li 'Photo', '/media/photo' %>
+                    <%= raw li 'Video', '/media/video' %>
+                </span>
+		    </ul>
+	    </li>
+
+	    <li><%= link_to "Events", '/events' %>
+            <ul>
+                <span class="nav">
+                    <%= raw li 'Workshops', '/workshops' %>
+                    <%= raw li 'Lectures' , '/lectures'  %>
+                </span>
+            </ul>
+        </li>
+	    
+        <%= raw li 'Contact', '/contact' %>
+    </ul>
+</nav>
+
+

@@ -1,0 +1,1 @@
+Main::Application.config.secret_key_base = '4803b02fbbd0096cf69cde3eec4abd37884d338770d2c4634b5939f5d8e7925e2c3da3356f7475522451f4e5d2afe8c6c8fa42736d749f8b18a9d84ddcc65d52'

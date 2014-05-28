@@ -1,0 +1,99 @@
+<h1>Membership Application</h1>
+
+<div>
+<% if flash[:status] == TRUE %>
+	<p><%= flash[:alert] %></p>
+<% elsif flash[:status] == FALSE %>
+	<%= flash[:alert].each do |error| %>
+	<p><%= error %></p>
+	<% end %>	
+<% end %>
+</div>
+
+<%= form_for @member do |member| %>
+	
+
+	<h2>Contact Information</h2>
+	<div>
+		<%= member.label(:first_name, "First Name") %>
+		<%= member.text_field :first_name %>
+	</div>
+
+	<div>
+		<%= member.label(:last_name, "Last Name") %>
+		<%= member.text_field :last_name %>
+	</div>
+
+	<div>
+		<%= image_submit_tag "Profile Pic Upload" %>
+	</div>
+
+	<div>
+		<%= member.label(:password, "Password") %>
+		<%= password_field_tag "Password" %>
+	</div>
+
+	<div>
+		<%= member.label(:password_confirmation, "Confirm Password") %>
+		<%= password_field_tag "COnfirm Password" %>
+	</div>
+
+	<div>
+		<%= member.label(:email, "Primary Email") %>
+		<%= email_field_tag "Primary Email" %>
+	</div>
+
+	<div>
+		<%= member.label(:phone, "Primary Phone") %>
+		<%= telephone_field_tag "Primary Phone" %>
+	</div>
+
+	<div>
+		<%= member.select :gender, ['Male', 'Female', 'Secret'] %>	
+	</div>
+	
+	<h2>Personal Information</h2>
+	<div>
+		<%= member.label(:pid, "UCF PID") %>
+		<%= member.text_field :pid %>
+	</div>
+
+	<div>
+		<p>GPA, Major(s), Minor(s)</p>
+	</div>
+
+	<div>
+		<%= member.label(:aboutme, "About Me") %>
+		<%= member.text_area :aboutme %>
+	</div>
+
+	<div>
+		<%= member.label(:skills, "My Skills") %>
+		<%= member.text_area :skills %>
+	</div>
+
+	<div>
+		<%= member.label(:experience, "My Experience (internships, work, etc)") %>
+		<%= member.text_area :experience %>
+	</div>
+
+	<div>
+		<p>What other clubs (UCF or other) have you been involved in?</p>
+		<%= member.label(:otherinvolvement, "Involvement") %>
+		<%= member.text_field :otherinvolvement %>
+		<br/><%= button_tag "Add another" %>
+	</div>
+
+	<div>
+		<p>How many hours/week on average do plan to dedicate to EWB?</p>
+		<%= member.select :timededication, ['0-2', '3-5', '6-8'] %>	</div>
+	</div>
+
+	<h2>Personal Projects</h2>
+
+	<div>
+		<%= submit_tag "Pay Dues and Complete Membership Application!" %>
+		<%= submit_tag "Save my application for 24hrs" %>
+	</div>
+
+<% end %>

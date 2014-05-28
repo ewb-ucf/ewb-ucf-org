@@ -1,0 +1,67 @@
+<% 
+    # ruby home 
+%>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>EWB-UCF | Engineers Without Borders - University of Central Florida</title>
+</head>
+<body>
+    <nav class="home">
+	    <a href="/"><%= image_tag("logo3.png") %></a>
+	    <ul>
+		    <li><a href="/AboutUs"> About Us    </a></li>
+		    <li><a href="#">        Our People  </a>
+			    <ul>
+				    <li><a href="#"> Exec Board	       </a></li>
+				    <li><a href="#"> Intl Project Team  </a></li>
+				    <li><a href="#"> Local Project Team </a></li>
+				    <li><a href="#"> Software Team	   </a></li>
+				    <li><a href="#"> Alumni		       </a></li>
+				    <li><a href="#"> Our Partners	   </a></li>	
+			    </ul>	
+		    </li>
+		    <li><a href="#">        Our Projects </a>
+			    <ul>
+				    <li><a href="#">International Projects</a>
+					    <ul>
+						    <li><a href="#">Dominican Republic</a></li>
+						    <li><a href="#">Haiti (complete)</a></li>
+					    </ul>
+                    </li>
+				    <li><a href="#">Local Projects</a>
+                        <ul>
+    						<li><a href="#">Bithlo Aquaponics</a></li>
+	    					<li><a href="#">PBP Rainwater Catchment</a></li>
+		    			</ul>
+                    </li>
+				    <li><a href="#">Software Projects</a></li>
+				    <li><a href="#">Other Projects</a>
+                        <ul>
+						    <li><a href="#">Weather Station</a></li>
+						    <li><a href="#">Solar Water Filter</a></li>
+                            <li><a href="#">Rube Goldberg</a></li>
+                            <li><a href="#">3D Printer</a></li>
+					    </ul>
+                    </li>
+	            </ul>
+		    </li>		
+		    <li><a href="#">Media       </a>
+			    <ul>
+				    <li><a href="#">Photos</a></li>
+				    <li><a href="#">Videos</a></li>
+			    </ul>
+		    </li>
+		    <li><a href="#">Events      </a></li>
+		    <li><a href="#">Contact     </a></li>		
+	    </ul>
+    </nav>
+
+	<footer class="home">
+	    Copyright &copy 2014 by Engineers Without Borders - UCF
+    </footer>
+</body>
+</html>
+

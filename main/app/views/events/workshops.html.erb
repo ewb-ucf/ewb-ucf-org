@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Workshops </div>
+
+    <div id="content">
+
+        <a href="#" class="tile">
+            <div class="tile">
+                <%= image_tag "logo-rails.png", :height => '180px', :class => 'tile' %>
+                <h4 style="font-size: 20pt;">Web Dev Series</h4>
+                <h5>Web Development</h5>
+            </div>
+        </a>
+
+
+        <a href="#" class="tile">
+            <div class="tile">
+                <%= image_tag "logo-octave.png", :height => '180px', :class => 'tile' %>
+                <h4>MATLAB &amp; Octave</h4>
+                <br>
+                <h5>Programming for Engineers</h5>
+            </div>
+        </a>
+
+        <a href="#" class="tile">
+            <div class="tile">
+                <%= image_tag "logo-circuit.jpg", :height => '180px', :class => 'tile' %>
+                <h4>Circuits</h4>
+                <br>
+                <h5>Building &amp; Design</h5>
+            </div>
+        </a>
+
+
+        <a href="#" class="tile">
+            <div class="tile">
+                <%= image_tag "logo-bulb.png", :height => '180px', :class => 'tile' %>
+                <h4 style="font-size: 20pt;">Scraps to Gold</h4>
+                <br>
+                <h5>Engineering Innovation</h5>
+            </div>
+        </a>
+
+
+        <a href="#" class="tile">
+            <div class="tile">
+                <%= image_tag "logo-aid.png", :height => '180px', :class => 'tile' %>
+                <h4>First Aid</h4>
+                <br>
+                <h5 style="font-size: 12pt;">Healthcare in the Developing World</h5>
+            </div>
+        </a>
+
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Local Project Team </div>
+
+    <div id="content">
+
+        <%= raw mini_profile 'Jason', 'Balog', 'Local Project Manager','2015', 'Electrical Engineering' %>
+
+        <div class="divider"></div>
+
+        <%= raw mini_profile 'Matt', 'Coalson', 'Fundraising Lead', '2016', 'Mechanical Engineering' %>
+     
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+    
+</body>
+</html>

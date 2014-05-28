@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Other Projects </div>
+
+    <div id="content">
+
+        <a href="#" class="tile">
+            <div class="tile">
+                <%= image_tag "logo-weather_station.png", :height => '180px', :class => 'tile' %>
+                <h4>Weather Station</h4>
+                <h5>Powered by Raspberry Pi</h5>
+            </div>
+        </a>
+
+
+        <a href="#" class="tile">
+            <div class="tile">
+                <%= image_tag "logo-water_drop.png", :height => '180px', :class => 'tile' %>
+                <h4>Water Filter</h4>
+                <h5>Bio-Sand Filter Demo</h5>
+
+            </div>
+        </a>
+
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

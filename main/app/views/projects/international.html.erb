@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> International Projects </div>
+
+    <div id="content">
+
+        <a href="#" class="tile">
+            <div class="tile">
+                <img src="" width="90%" height="180px" style="display: inline-block;"/>
+                <h4 style="font-size: 20pt;">Dominican Republic</h4>
+                <h5>Water Program</h5>
+            </div>
+        </a>
+
+
+        <a href="#" class="tile">
+            <div class="tile">
+                <%= image_tag "haiti2.jpg", :width => "100%", :class => 'tile' %>
+                <br>
+                <h4 class="sub">Mare Brignol</h4> &nbsp; <h4>Haiti</h4>
+                <br>
+                <h5>Water Development Program</h5>
+            </div>
+        </a>
+
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

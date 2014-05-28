@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Software Projects </div>
+
+    <div id="content" style="overflow: hidden;">
+
+        <%
+            weather_station_description = 'The EWB-UCF Weather Station
+            is an open source, infrastructure-independent data collection system
+            designed to record and transmit weather data in real-time from 
+            around the globe regardless in-country resources. The open source 
+            design of the system allows other to replicate and improve upon the 
+            weather station for their own purposes. 
+
+            The weather station includes a web-based user interface and 
+            engineering toolbox to analyze and apply weather data to real-world 
+            development projects. The weather station uses a Raspberry Pi for 
+            data collection and will communicate using the Iridium satellite 
+            network upon completion. The open source software in implemented 
+            using Python and the Django web framework.'
+
+            ewb_website_description = 'Our software team also manages the 
+            EWB-UCF website. Our site in implemented using Ruby on Rails to 
+            allow for rapid development of new features. Various other languages
+            and frameworks are used throughout the site, including HTML, CSS, 
+            javacript, PHP, and Python. Many of our web projects use other 
+            platforms. For example our Weather Station website uses the Python
+            Django framework. This diversity of our site allows our developers
+            to explore their interests and learn new skills while contributing
+            to the EWB-UCF website.'
+
+            coli_count_description = 'Our software team is working on a project 
+            that utilizes image processing algorithms to detect and count 
+            coliform and E. coli samples in a petri dish. This will allow 
+            monitoring and assessment teams to simply take photos and send them
+            back to EWB-UCF for immediate analysis rather than recording data 
+            by hand and waiting to travel home to analyze the data. This faster
+            data analysis could allow for more effective monitoring and 
+            assessment trips while decreasing project costs.'
+        %>
+
+        <%= raw project 'Weather Station', weather_station_description %>
+        <%= raw project 'EWB-UCF Website', ewb_website_description %>
+        <%= raw project 'Coli Count'     , coli_count_description %>
+
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>
