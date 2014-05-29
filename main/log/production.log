@@ -16814,3 +16814,1264 @@ ActionController::RoutingError (No route matches [GET] "/old6k/payindivudually")
   /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
 
 
+I, [2014-05-28T18:18:20.274168 #31009]  INFO -- : Started GET "/about" for 71.47.27.219 at 2014-05-28 18:18:20 +0000
+I, [2014-05-28T18:18:20.275026 #31009]  INFO -- : Processing by StaticPagesController#about as HTML
+I, [2014-05-28T18:18:20.276378 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T18:18:20.277172 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T18:18:20.277262 #31009]  INFO -- :   Rendered static_pages/about.html.erb within layouts/application (1.5ms)
+I, [2014-05-28T18:18:20.277749 #31009]  INFO -- : Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T18:18:21.305622 #31009]  INFO -- : Started GET "/" for 71.47.27.219 at 2014-05-28 18:18:21 +0000
+I, [2014-05-28T18:18:21.306443 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-28T18:18:21.308652 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T18:18:21.308878 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T18:18:21.308994 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+I, [2014-05-28T18:18:21.309493 #31009]  INFO -- : Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T18:24:16.298703 #31009]  INFO -- : Started GET "/wp-content/uploads/2013/10/Slides-10-1.pptx" for 144.76.173.109 at 2014-05-28 18:24:16 +0000
+F, [2014-05-28T18:24:16.299544 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/uploads/2013/10/Slides-10-1.pptx"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T18:36:21.370693 #31009]  INFO -- : Started GET "/sand-filters/" for 216.47.147.30 at 2014-05-28 18:36:21 +0000
+F, [2014-05-28T18:36:21.371541 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/sand-filters"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T18:43:44.638784 #31009]  INFO -- : Started GET "/" for 198.101.238.203 at 2014-05-28 18:43:44 +0000
+I, [2014-05-28T18:43:44.639590 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-28T18:43:44.640687 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T18:43:44.640938 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T18:43:44.641027 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-05-28T18:43:44.641552 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T18:44:38.600793 #31009]  INFO -- : Started GET "/" for 132.170.140.69 at 2014-05-28 18:44:38 +0000
+I, [2014-05-28T18:44:38.601612 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-28T18:44:38.602643 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T18:44:38.602860 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T18:44:38.602949 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-05-28T18:44:38.603473 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T18:44:45.169362 #31009]  INFO -- : Started GET "/projects/local" for 132.170.140.69 at 2014-05-28 18:44:45 +0000
+I, [2014-05-28T18:44:45.170229 #31009]  INFO -- : Processing by ProjectsController#local as HTML
+I, [2014-05-28T18:44:45.171594 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T18:44:45.171820 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T18:44:45.172018 #31009]  INFO -- :   Rendered projects/local.html.erb within layouts/application (1.0ms)
+I, [2014-05-28T18:44:45.172595 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T18:44:50.075823 #31009]  INFO -- : Started GET "/projects/local" for 132.170.140.69 at 2014-05-28 18:44:50 +0000
+I, [2014-05-28T18:44:50.076703 #31009]  INFO -- : Processing by ProjectsController#local as HTML
+I, [2014-05-28T18:44:50.077926 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T18:44:50.078178 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T18:44:50.078269 #31009]  INFO -- :   Rendered projects/local.html.erb within layouts/application (0.8ms)
+I, [2014-05-28T18:44:50.078748 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T18:44:58.647667 #31009]  INFO -- : Started GET "/projects/local" for 132.170.140.69 at 2014-05-28 18:44:58 +0000
+I, [2014-05-28T18:44:58.648475 #31009]  INFO -- : Processing by ProjectsController#local as HTML
+I, [2014-05-28T18:44:58.649695 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T18:44:58.649946 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T18:44:58.650035 #31009]  INFO -- :   Rendered projects/local.html.erb within layouts/application (0.9ms)
+I, [2014-05-28T18:44:58.650516 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:04:54.766152 #31009]  INFO -- : Started GET "/" for 37.59.184.103 at 2014-05-28 19:04:54 +0000
+I, [2014-05-28T19:04:54.766978 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-28T19:04:54.768129 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.5ms)
+I, [2014-05-28T19:04:54.768348 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:04:54.768438 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+I, [2014-05-28T19:04:54.768976 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:27:57.644356 #31009]  INFO -- : Started GET "/" for 132.170.150.204 at 2014-05-28 19:27:57 +0000
+I, [2014-05-28T19:27:57.645167 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-28T19:27:57.646162 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:27:57.646376 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:27:57.646506 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-05-28T19:27:57.646996 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:40:54.095769 #31009]  INFO -- : Started GET "/" for 132.170.253.255 at 2014-05-28 19:40:54 +0000
+I, [2014-05-28T19:40:54.096583 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-28T19:40:54.097601 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:40:54.097848 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:40:54.097936 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-05-28T19:40:54.098452 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:41:08.744702 #31009]  INFO -- : Started GET "/about" for 132.170.253.255 at 2014-05-28 19:41:08 +0000
+I, [2014-05-28T19:41:08.745556 #31009]  INFO -- : Processing by StaticPagesController#about as HTML
+I, [2014-05-28T19:41:08.746797 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:41:08.747587 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:41:08.747680 #31009]  INFO -- :   Rendered static_pages/about.html.erb within layouts/application (1.4ms)
+I, [2014-05-28T19:41:08.748260 #31009]  INFO -- : Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:41:14.115612 #31009]  INFO -- : Started GET "/about" for 132.170.253.255 at 2014-05-28 19:41:14 +0000
+I, [2014-05-28T19:41:14.116521 #31009]  INFO -- : Processing by StaticPagesController#about as HTML
+I, [2014-05-28T19:41:14.130809 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:41:14.131609 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:41:14.131702 #31009]  INFO -- :   Rendered static_pages/about.html.erb within layouts/application (1.4ms)
+I, [2014-05-28T19:41:14.132266 #31009]  INFO -- : Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:41:22.145478 #31009]  INFO -- : Started GET "/media" for 132.170.253.255 at 2014-05-28 19:41:22 +0000
+I, [2014-05-28T19:41:22.146380 #31009]  INFO -- : Processing by StaticPagesController#under_construction as HTML
+I, [2014-05-28T19:41:22.147151 #31009]  INFO -- :   Rendered static_pages/under_construction.html.erb within layouts/application (0.0ms)
+I, [2014-05-28T19:41:22.147657 #31009]  INFO -- : Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:41:30.086288 #31009]  INFO -- : Started GET "/" for 132.170.253.255 at 2014-05-28 19:41:30 +0000
+I, [2014-05-28T19:41:30.087107 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-28T19:41:30.088303 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:41:30.088521 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:41:30.088611 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-05-28T19:41:30.089089 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:41:37.159929 #31009]  INFO -- : Started GET "/local_project_team" for 132.170.253.255 at 2014-05-28 19:41:37 +0000
+I, [2014-05-28T19:41:37.160817 #31009]  INFO -- : Processing by MembersController#local_project_team as HTML
+I, [2014-05-28T19:41:37.163139 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:41:37.163416 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:41:37.163506 #31009]  INFO -- :   Rendered members/local_project_team.html.erb within layouts/application (1.4ms)
+I, [2014-05-28T19:41:37.164095 #31009]  INFO -- : Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:41:43.811194 #31009]  INFO -- : Started GET "/local_project_team" for 132.170.253.255 at 2014-05-28 19:41:43 +0000
+I, [2014-05-28T19:41:43.812024 #31009]  INFO -- : Processing by MembersController#local_project_team as HTML
+I, [2014-05-28T19:41:43.813261 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:41:43.813518 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:41:43.813640 #31009]  INFO -- :   Rendered members/local_project_team.html.erb within layouts/application (0.8ms)
+I, [2014-05-28T19:41:43.814087 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:41:49.114674 #31009]  INFO -- : Started GET "/local_project_team" for 132.170.253.255 at 2014-05-28 19:41:49 +0000
+I, [2014-05-28T19:41:49.115451 #31009]  INFO -- : Processing by MembersController#local_project_team as HTML
+I, [2014-05-28T19:41:49.118620 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:41:49.118911 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:41:49.119000 #31009]  INFO -- :   Rendered members/local_project_team.html.erb within layouts/application (0.9ms)
+I, [2014-05-28T19:41:49.119528 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:42:02.021215 #31009]  INFO -- : Started GET "/intl_project_team" for 132.170.253.255 at 2014-05-28 19:42:02 +0000
+I, [2014-05-28T19:42:02.022066 #31009]  INFO -- : Processing by MembersController#intl_project_team as HTML
+I, [2014-05-28T19:42:02.024639 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.5ms)
+I, [2014-05-28T19:42:02.025012 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:42:02.025102 #31009]  INFO -- :   Rendered members/intl_project_team.html.erb within layouts/application (1.8ms)
+I, [2014-05-28T19:42:02.025631 #31009]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:42:12.354871 #31009]  INFO -- : Started GET "/software_team" for 132.170.253.255 at 2014-05-28 19:42:12 +0000
+I, [2014-05-28T19:42:12.355689 #31009]  INFO -- : Processing by MembersController#software_team as HTML
+I, [2014-05-28T19:42:12.358085 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:42:12.358392 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:42:12.358486 #31009]  INFO -- :   Rendered members/software_team.html.erb within layouts/application (1.5ms)
+I, [2014-05-28T19:42:12.359027 #31009]  INFO -- : Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T19:42:23.044179 #31009]  INFO -- : Started GET "/" for 132.170.253.255 at 2014-05-28 19:42:23 +0000
+I, [2014-05-28T19:42:23.045055 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-28T19:42:23.046440 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T19:42:23.046664 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T19:42:23.046755 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+I, [2014-05-28T19:42:23.047272 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T20:15:37.173944 #31009]  INFO -- : Started GET "/about-us/563952_10151032953310773_720016332_n/" for 107.155.118.164 at 2014-05-28 20:15:37 +0000
+F, [2014-05-28T20:15:37.174828 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/about-us/563952_10151032953310773_720016332_n"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T20:27:54.868178 #31009]  INFO -- : Started GET "/ProjectMap.pdf" for 157.55.33.42 at 2014-05-28 20:27:54 +0000
+F, [2014-05-28T20:27:54.869051 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/ProjectMap.pdf"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T21:21:44.200201 #31009]  INFO -- : Started GET "/manager/html" for 117.21.191.205 at 2014-05-28 21:21:44 +0000
+F, [2014-05-28T21:21:44.201073 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/manager/html"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T21:25:02.260132 #31009]  INFO -- : Started GET "/wp-content/themes/twentytwelve/style.css?ver=3.8.2" for 66.249.73.156 at 2014-05-28 21:25:02 +0000
+F, [2014-05-28T21:25:02.260950 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/themes/twentytwelve/style.css"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T21:25:40.992234 #31009]  INFO -- : Started GET "/wp-content/plugins/google-calendar-events/css/gce-style.css?ver=3.8.2" for 66.249.73.156 at 2014-05-28 21:25:40 +0000
+F, [2014-05-28T21:25:40.993068 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/plugins/google-calendar-events/css/gce-style.css"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T21:26:21.311555 #31009]  INFO -- : Started HEAD "/" for 54.204.86.165 at 2014-05-28 21:26:21 +0000
+I, [2014-05-28T21:26:21.312359 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-28T21:26:21.313339 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T21:26:21.313587 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T21:26:21.313675 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-05-28T21:26:21.314174 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T21:47:39.399349 #31009]  INFO -- : Started GET "/" for 109.68.190.145 at 2014-05-28 21:47:39 +0000
+I, [2014-05-28T21:47:39.400125 #31009]  INFO -- : Processing by StaticPagesController#home as */*
+I, [2014-05-28T21:47:39.401203 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-28T21:47:39.401424 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-28T21:47:39.401513 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+I, [2014-05-28T21:47:39.402027 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-28T21:52:33.660942 #31009]  INFO -- : Started GET "/feed/" for 66.249.73.156 at 2014-05-28 21:52:33 +0000
+F, [2014-05-28T21:52:33.661760 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/feed"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T21:57:28.100009 #31009]  INFO -- : Started GET "/wp-content/plugins/jetpack/modules/shortcodes/css/slideshow-shortcode.css?ver=3.8.2" for 66.249.73.156 at 2014-05-28 21:57:28 +0000
+F, [2014-05-28T21:57:28.100874 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/plugins/jetpack/modules/shortcodes/css/slideshow-shortcode.css"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T22:10:00.706257 #31009]  INFO -- : Started GET "/blog/" for 66.249.73.156 at 2014-05-28 22:10:00 +0000
+F, [2014-05-28T22:10:00.707127 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/blog"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T22:12:14.635137 #31009]  INFO -- : Started GET "/6k/" for 66.249.73.156 at 2014-05-28 22:12:14 +0000
+F, [2014-05-28T22:12:14.635981 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/6k"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T22:25:07.627611 #31009]  INFO -- : Started GET "/sand-filters/" for 157.56.93.95 at 2014-05-28 22:25:07 +0000
+F, [2014-05-28T22:25:07.628491 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/sand-filters"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T22:40:46.550833 #31009]  INFO -- : Started GET "/index.php?format=feed&type=atom" for 62.210.215.112 at 2014-05-28 22:40:46 +0000
+F, [2014-05-28T22:40:46.551692 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/index.php"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T23:23:17.386345 #31009]  INFO -- : Started GET "/immgaisv.html" for 66.249.73.143 at 2014-05-28 23:23:17 +0000
+F, [2014-05-28T23:23:17.387208 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/immgaisv.html"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T23:55:01.899115 #31009]  INFO -- : Started GET "/wp-content/uploads/2013/10/Aquaponics.Robert.Papspon.EWB_.pptx" for 66.249.73.156 at 2014-05-28 23:55:01 +0000
+F, [2014-05-28T23:55:01.899998 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/uploads/2013/10/Aquaponics.Robert.Papspon.EWB_.pptx"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-28T23:59:50.138082 #31009]  INFO -- : Started GET "/home?format=feed&type=atom" for 62.210.215.112 at 2014-05-28 23:59:50 +0000
+F, [2014-05-28T23:59:50.138928 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/home"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T00:09:19.046792 #31009]  INFO -- : Started GET "/" for 66.249.73.156 at 2014-05-29 00:09:19 +0000
+I, [2014-05-29T00:09:19.047566 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-29T00:09:19.048601 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:09:19.048825 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:09:19.048915 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-05-29T00:09:19.049431 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:10:15.946724 #31009]  INFO -- : Started GET "/projects/software" for 66.249.73.156 at 2014-05-29 00:10:15 +0000
+I, [2014-05-29T00:10:15.947553 #31009]  INFO -- : Processing by ProjectsController#software as HTML
+I, [2014-05-29T00:10:15.948732 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:10:15.949035 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:10:15.949126 #31009]  INFO -- :   Rendered projects/software.html.erb within layouts/application (1.0ms)
+I, [2014-05-29T00:10:15.949691 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:10:16.353301 #31009]  INFO -- : Started GET "/media" for 66.249.73.156 at 2014-05-29 00:10:16 +0000
+I, [2014-05-29T00:10:16.354155 #31009]  INFO -- : Processing by StaticPagesController#under_construction as HTML
+I, [2014-05-29T00:10:16.354790 #31009]  INFO -- :   Rendered static_pages/under_construction.html.erb within layouts/application (0.0ms)
+I, [2014-05-29T00:10:16.355370 #31009]  INFO -- : Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:10:22.646765 #31009]  INFO -- : Started GET "/about" for 66.249.73.156 at 2014-05-29 00:10:22 +0000
+I, [2014-05-29T00:10:22.647546 #31009]  INFO -- : Processing by StaticPagesController#about as HTML
+I, [2014-05-29T00:10:22.648625 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:10:22.649439 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:10:22.649529 #31009]  INFO -- :   Rendered static_pages/about.html.erb within layouts/application (1.4ms)
+I, [2014-05-29T00:10:22.650067 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:10:27.892969 #31009]  INFO -- : Started GET "/alumni" for 66.249.73.156 at 2014-05-29 00:10:27 +0000
+I, [2014-05-29T00:10:27.893756 #31009]  INFO -- : Processing by MembersController#alum as HTML
+I, [2014-05-29T00:10:27.894873 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:10:27.895137 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:10:27.895245 #31009]  INFO -- :   Rendered members/alum.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T00:10:27.895764 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:10:33.481132 #31009]  INFO -- : Started GET "/events" for 66.249.73.156 at 2014-05-29 00:10:33 +0000
+I, [2014-05-29T00:10:33.482001 #31009]  INFO -- : Processing by StaticPagesController#under_construction as HTML
+I, [2014-05-29T00:10:33.483929 #31009]  INFO -- :   Rendered static_pages/under_construction.html.erb within layouts/application (0.0ms)
+I, [2014-05-29T00:10:33.484550 #31009]  INFO -- : Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:10:39.278057 #31009]  INFO -- : Started GET "/contact" for 66.249.73.156 at 2014-05-29 00:10:39 +0000
+I, [2014-05-29T00:10:39.278911 #31009]  INFO -- : Processing by StaticPagesController#under_construction as HTML
+I, [2014-05-29T00:10:39.279499 #31009]  INFO -- :   Rendered static_pages/under_construction.html.erb within layouts/application (0.0ms)
+I, [2014-05-29T00:10:39.280106 #31009]  INFO -- : Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:13:06.272755 #31009]  INFO -- : Started GET "/partners" for 66.249.73.156 at 2014-05-29 00:13:06 +0000
+I, [2014-05-29T00:13:06.273615 #31009]  INFO -- : Processing by StaticPagesController#partners as HTML
+I, [2014-05-29T00:13:06.274642 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:13:06.275008 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:13:06.275115 #31009]  INFO -- :   Rendered static_pages/partners.html.erb within layouts/application (1.0ms)
+I, [2014-05-29T00:13:06.275651 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:15:08.299602 #31009]  INFO -- : Started GET "/lectures" for 66.249.73.156 at 2014-05-29 00:15:08 +0000
+I, [2014-05-29T00:15:08.300451 #31009]  INFO -- : Processing by StaticPagesController#under_construction as HTML
+I, [2014-05-29T00:15:08.301015 #31009]  INFO -- :   Rendered static_pages/under_construction.html.erb within layouts/application (0.0ms)
+I, [2014-05-29T00:15:08.301566 #31009]  INFO -- : Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:17:21.409703 #31009]  INFO -- : Started GET "/workshops" for 66.249.73.156 at 2014-05-29 00:17:21 +0000
+I, [2014-05-29T00:17:21.410492 #31009]  INFO -- : Processing by EventsController#workshops as HTML
+I, [2014-05-29T00:17:21.411634 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:17:21.412280 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:17:21.412372 #31009]  INFO -- :   Rendered events/workshops.html.erb within layouts/application (1.3ms)
+I, [2014-05-29T00:17:21.412938 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:20:14.174476 #31009]  INFO -- : Started GET "/exec_board" for 66.249.73.156 at 2014-05-29 00:20:14 +0000
+I, [2014-05-29T00:20:14.175292 #31009]  INFO -- : Processing by MembersController#exec_board as HTML
+I, [2014-05-29T00:20:14.176427 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:20:14.176850 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:20:14.176940 #31009]  INFO -- :   Rendered members/exec_board.html.erb within layouts/application (1.1ms)
+I, [2014-05-29T00:20:14.177522 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:23:06.971168 #31009]  INFO -- : Started GET "/software_team" for 66.249.73.156 at 2014-05-29 00:23:06 +0000
+I, [2014-05-29T00:23:06.971995 #31009]  INFO -- : Processing by MembersController#software_team as HTML
+I, [2014-05-29T00:23:06.973005 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:23:06.973300 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:23:06.973389 #31009]  INFO -- :   Rendered members/software_team.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T00:23:06.973916 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:26:06.291898 #31009]  INFO -- : Started GET "/intl_project_team" for 66.249.73.156 at 2014-05-29 00:26:06 +0000
+I, [2014-05-29T00:26:06.292665 #31009]  INFO -- : Processing by MembersController#intl_project_team as HTML
+I, [2014-05-29T00:26:06.293689 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:26:06.294076 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:26:06.294183 #31009]  INFO -- :   Rendered members/intl_project_team.html.erb within layouts/application (1.0ms)
+I, [2014-05-29T00:26:06.294712 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:29:15.010898 #31009]  INFO -- : Started GET "/local_project_team" for 66.249.73.156 at 2014-05-29 00:29:15 +0000
+I, [2014-05-29T00:29:15.011661 #31009]  INFO -- : Processing by MembersController#local_project_team as HTML
+I, [2014-05-29T00:29:15.012787 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:29:15.013051 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:29:15.013139 #31009]  INFO -- :   Rendered members/local_project_team.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T00:29:15.013659 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:31:45.388457 #31009]  INFO -- : Started GET "/media/video" for 66.249.73.156 at 2014-05-29 00:31:45 +0000
+F, [2014-05-29T00:31:45.389359 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/media/video"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T00:34:46.245232 #31009]  INFO -- : Started GET "/FundraisingCommittee021109.pdf" for 65.55.52.113 at 2014-05-29 00:34:46 +0000
+F, [2014-05-29T00:34:46.246100 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/FundraisingCommittee021109.pdf"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T00:35:16.880835 #31009]  INFO -- : Started GET "/media/photo" for 66.249.73.156 at 2014-05-29 00:35:16 +0000
+F, [2014-05-29T00:35:16.881684 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/media/photo"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T00:39:07.032624 #31009]  INFO -- : Started GET "/projects/local" for 66.249.73.156 at 2014-05-29 00:39:07 +0000
+I, [2014-05-29T00:39:07.033426 #31009]  INFO -- : Processing by ProjectsController#local as HTML
+I, [2014-05-29T00:39:07.034523 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:39:07.034758 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:39:07.034872 #31009]  INFO -- :   Rendered projects/local.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T00:39:07.035408 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:40:53.382855 #31009]  INFO -- : Started GET "/projects/other" for 66.249.73.156 at 2014-05-29 00:40:53 +0000
+I, [2014-05-29T00:40:53.383650 #31009]  INFO -- : Processing by ProjectsController#other as HTML
+I, [2014-05-29T00:40:53.384749 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:40:53.385161 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:40:53.385254 #31009]  INFO -- :   Rendered projects/other.html.erb within layouts/application (1.0ms)
+I, [2014-05-29T00:40:53.385790 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T00:42:07.611683 #31009]  INFO -- : Started GET "/projects/international" for 66.249.73.156 at 2014-05-29 00:42:07 +0000
+I, [2014-05-29T00:42:07.612503 #31009]  INFO -- : Processing by ProjectsController#international as HTML
+I, [2014-05-29T00:42:07.613567 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T00:42:07.613868 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T00:42:07.613978 #31009]  INFO -- :   Rendered projects/international.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T00:42:07.614483 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T01:31:19.538785 #31009]  INFO -- : Started GET "/manager/html" for 123.249.19.23 at 2014-05-29 01:31:19 +0000
+F, [2014-05-29T01:31:19.539686 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/manager/html"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T01:55:01.419951 #31009]  INFO -- : Started GET "/about-us/223346_1709964474077_324053_n-4/" for 66.249.73.156 at 2014-05-29 01:55:01 +0000
+F, [2014-05-29T01:55:01.420798 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/about-us/223346_1709964474077_324053_n-4"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T01:57:44.038397 #31009]  INFO -- : Started GET "/general-club-documents/" for 66.249.73.156 at 2014-05-29 01:57:44 +0000
+F, [2014-05-29T01:57:44.039282 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/general-club-documents"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T02:02:45.245234 #31009]  INFO -- : Started GET "/about-us/229036_1709964714083_1874279_n-3/" for 66.249.73.156 at 2014-05-29 02:02:45 +0000
+F, [2014-05-29T02:02:45.246137 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/about-us/229036_1709964714083_1874279_n-3"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T02:07:44.529121 #31009]  INFO -- : Started GET "/6k-registration/" for 66.249.73.156 at 2014-05-29 02:07:44 +0000
+F, [2014-05-29T02:07:44.529970 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/6k-registration"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T02:54:55.504003 #31009]  INFO -- : Started GET "/manager/html" for 123.249.19.23 at 2014-05-29 02:54:55 +0000
+F, [2014-05-29T02:54:55.504891 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/manager/html"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T02:55:03.582543 #31009]  INFO -- : Started GET "/?page_id=6" for 66.249.73.156 at 2014-05-29 02:55:03 +0000
+I, [2014-05-29T02:55:03.583381 #31009]  INFO -- : Processing by StaticPagesController#home as */*
+I, [2014-05-29T02:55:03.583434 #31009]  INFO -- :   Parameters: {"page_id"=>"6"}
+I, [2014-05-29T02:55:03.584664 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T02:55:03.584896 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T02:55:03.584986 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T02:55:03.585556 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T02:58:45.310589 #31009]  INFO -- : Started GET "/wp-content/themes/twentytwelve/style.css?ver=3.5.2" for 66.249.73.156 at 2014-05-29 02:58:45 +0000
+F, [2014-05-29T02:58:45.311442 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/themes/twentytwelve/style.css"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T02:58:46.309574 #31009]  INFO -- : Started GET "/wp-content/plugins/jetpack/modules/shortcodes/css/slideshow-shortcode.css?ver=3.5.2" for 66.249.73.156 at 2014-05-29 02:58:46 +0000
+F, [2014-05-29T02:58:46.310470 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/plugins/jetpack/modules/shortcodes/css/slideshow-shortcode.css"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T02:58:47.405633 #31009]  INFO -- : Started GET "/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css?ver=2.3.1" for 66.249.73.156 at 2014-05-29 02:58:47 +0000
+F, [2014-05-29T02:58:47.406508 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T02:58:47.802525 #31009]  INFO -- : Started GET "/wp-includes/js/jquery/jquery.js?ver=1.8.3" for 66.249.73.156 at 2014-05-29 02:58:47 +0000
+F, [2014-05-29T02:58:47.803291 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-includes/js/jquery/jquery.js"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T03:00:01.608468 #31009]  INFO -- : Started GET "/wp-content/uploads/2014/02/EWB-UCF-Eboard-Application-2014-2015.docx" for 66.249.73.156 at 2014-05-29 03:00:01 +0000
+F, [2014-05-29T03:00:01.609250 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/uploads/2014/02/EWB-UCF-Eboard-Application-2014-2015.docx"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T03:16:47.326329 #31009]  INFO -- : Started GET "/sand-filters/" for 216.47.147.30 at 2014-05-29 03:16:47 +0000
+F, [2014-05-29T03:16:47.327098 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/sand-filters"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T03:39:03.079640 #31009]  INFO -- : Started GET "/" for 71.46.223.4 at 2014-05-29 03:39:03 +0000
+I, [2014-05-29T03:39:03.080411 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-29T03:39:03.081374 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T03:39:03.081590 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T03:39:03.081680 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-05-29T03:39:03.082164 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T03:41:16.361775 #31009]  INFO -- : Started GET "/wp-login.php" for 109.195.102.8 at 2014-05-29 03:41:16 +0000
+F, [2014-05-29T03:41:16.362539 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-login.php"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T03:41:16.624796 #31009]  INFO -- : Started GET "/administrator/index.php" for 109.195.102.8 at 2014-05-29 03:41:16 +0000
+F, [2014-05-29T03:41:16.625549 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/administrator/index.php"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T03:41:16.888356 #31009]  INFO -- : Started GET "/admin.php" for 109.195.102.8 at 2014-05-29 03:41:16 +0000
+F, [2014-05-29T03:41:16.889119 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/admin.php"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T03:45:16.025884 #31009]  INFO -- : Started GET "/about-us/226946_1709968514178_199035_n/" for 180.176.3.21 at 2014-05-29 03:45:16 +0000
+F, [2014-05-29T03:45:16.026656 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/about-us/226946_1709968514178_199035_n"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T03:55:15.047588 #31009]  INFO -- : Started GET "/" for 71.47.19.255 at 2014-05-29 03:55:15 +0000
+I, [2014-05-29T03:55:15.048374 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-29T03:55:15.049319 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.3ms)
+I, [2014-05-29T03:55:15.049534 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T03:55:15.049628 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-05-29T03:55:15.050110 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T03:55:23.252203 #31009]  INFO -- : Started GET "/projects/international" for 71.47.19.255 at 2014-05-29 03:55:23 +0000
+I, [2014-05-29T03:55:23.253021 #31009]  INFO -- : Processing by ProjectsController#international as HTML
+I, [2014-05-29T03:55:23.254239 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T03:55:23.254537 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T03:55:23.254627 #31009]  INFO -- :   Rendered projects/international.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T03:55:23.255091 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T03:55:40.570942 #31009]  INFO -- : Started GET "/projects/international" for 71.47.19.255 at 2014-05-29 03:55:40 +0000
+I, [2014-05-29T03:55:40.571732 #31009]  INFO -- : Processing by ProjectsController#international as HTML
+I, [2014-05-29T03:55:40.572935 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.3ms)
+I, [2014-05-29T03:55:40.573230 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T03:55:40.573323 #31009]  INFO -- :   Rendered projects/international.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T03:55:40.573761 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T03:55:47.307692 #31009]  INFO -- : Started GET "/intl_project_team" for 71.47.19.255 at 2014-05-29 03:55:47 +0000
+I, [2014-05-29T03:55:47.308490 #31009]  INFO -- : Processing by MembersController#intl_project_team as HTML
+I, [2014-05-29T03:55:47.309655 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T03:55:47.309977 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T03:55:47.310067 #31009]  INFO -- :   Rendered members/intl_project_team.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T03:55:47.310569 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T03:55:54.538723 #31009]  INFO -- : Started GET "/about-us/563952_10151032953310773_720016332_n/" for 50.115.171.210 at 2014-05-29 03:55:54 +0000
+F, [2014-05-29T03:55:54.539574 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/about-us/563952_10151032953310773_720016332_n"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T03:56:03.773392 #31009]  INFO -- : Started GET "/exec_board" for 71.47.19.255 at 2014-05-29 03:56:03 +0000
+I, [2014-05-29T03:56:03.774226 #31009]  INFO -- : Processing by MembersController#exec_board as HTML
+I, [2014-05-29T03:56:03.775493 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T03:56:03.775996 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T03:56:03.776088 #31009]  INFO -- :   Rendered members/exec_board.html.erb within layouts/application (1.2ms)
+I, [2014-05-29T03:56:03.776598 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T03:56:19.009922 #31009]  INFO -- : Started GET "/exec_board" for 71.47.19.255 at 2014-05-29 03:56:19 +0000
+I, [2014-05-29T03:56:19.010702 #31009]  INFO -- : Processing by MembersController#exec_board as HTML
+I, [2014-05-29T03:56:19.011961 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T03:56:19.012411 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T03:56:19.012501 #31009]  INFO -- :   Rendered members/exec_board.html.erb within layouts/application (1.1ms)
+I, [2014-05-29T03:56:19.013017 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T03:58:36.156575 #31009]  INFO -- : Started GET "/about-us/563952_10151032953310773_720016332_n/" for 199.15.233.180 at 2014-05-29 03:58:36 +0000
+F, [2014-05-29T03:58:36.157449 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/about-us/563952_10151032953310773_720016332_n"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T03:58:36.303651 #31009]  INFO -- : Started GET "/" for 199.15.233.180 at 2014-05-29 03:58:36 +0000
+I, [2014-05-29T03:58:36.304481 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-29T03:58:36.305597 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T03:58:36.305838 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T03:58:36.305940 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T03:58:36.306516 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T03:58:36.428286 #31009]  INFO -- : Started GET "/exec_board" for 199.15.233.180 at 2014-05-29 03:58:36 +0000
+I, [2014-05-29T03:58:36.429009 #31009]  INFO -- : Processing by MembersController#exec_board as HTML
+I, [2014-05-29T03:58:36.430206 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T03:58:36.430632 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T03:58:36.430721 #31009]  INFO -- :   Rendered members/exec_board.html.erb within layouts/application (1.0ms)
+I, [2014-05-29T03:58:36.431275 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T04:04:00.254276 #31009]  INFO -- : Started GET "/links/37-external-links?format=feed&type=rss" for 62.210.215.112 at 2014-05-29 04:04:00 +0000
+F, [2014-05-29T04:04:00.255124 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/links/37-external-links"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T04:08:51.390312 #31009]  INFO -- : Started GET "/" for 71.47.19.255 at 2014-05-29 04:08:51 +0000
+I, [2014-05-29T04:08:51.391095 #31009]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-05-29T04:08:51.392392 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T04:08:51.392615 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T04:08:51.392708 #31009]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+I, [2014-05-29T04:08:51.393219 #31009]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T04:08:54.265264 #31009]  INFO -- : Started GET "/about" for 71.47.19.255 at 2014-05-29 04:08:54 +0000
+I, [2014-05-29T04:08:54.266090 #31009]  INFO -- : Processing by StaticPagesController#about as HTML
+I, [2014-05-29T04:08:54.267321 #31009]  INFO -- :   Rendered static_pages/_nav.html.erb (0.4ms)
+I, [2014-05-29T04:08:54.268140 #31009]  INFO -- :   Rendered static_pages/_footer.html.erb (0.1ms)
+I, [2014-05-29T04:08:54.268236 #31009]  INFO -- :   Rendered static_pages/about.html.erb within layouts/application (1.4ms)
+I, [2014-05-29T04:08:54.268696 #31009]  INFO -- : Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+I, [2014-05-29T04:10:01.069923 #31009]  INFO -- : Started GET "/about-us/229036_1709964714083_1874279_n-2/" for 66.249.73.156 at 2014-05-29 04:10:01 +0000
+F, [2014-05-29T04:10:01.070788 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/about-us/229036_1709964714083_1874279_n-2"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T04:12:43.569765 #31009]  INFO -- : Started GET "/wp-content/uploads/2014/01/EWB-Informational-Brochure.docx" for 66.249.73.156 at 2014-05-29 04:12:43 +0000
+F, [2014-05-29T04:12:43.570641 #31009] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/wp-content/uploads/2014/01/EWB-Informational-Brochure.docx"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+  /home/ubuntu/.rvm/gems/ruby-2.1.2/gems/passenger-4.0.42/lib/phusion_passenger/request_handler.rb:448:in `block (3 levels) in start_threads'
+
+
+I, [2014-05-29T04:20:12.633536 #31009]  INFO -- : Started GET "/events" for 71.47.19.255 at 2014-05-29 04:20:12 +0000
+I, [2014-05-29T04:20:12.634432 #31009]  INFO -- : Processing by StaticPagesController#under_construction as HTML
+I, [2014-05-29T04:20:12.635241 #31009]  INFO -- :   Rendered static_pages/under_construction.html.erb within layouts/application (0.0ms)
+I, [2014-05-29T04:20:12.635745 #31009]  INFO -- : Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
