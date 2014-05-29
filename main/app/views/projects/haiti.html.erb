@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Mare Bringol Haiti <h4 class="sub">Biofilters</h4></div>
+
+    <div id="content" style="overflow: hidden;">
+
+        <%
+            clean_water_program_description = 'Bla bla about the program...'
+        %>
+
+        <%= raw project 'Clean Water Program', clean_water_program_description %>
+        
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

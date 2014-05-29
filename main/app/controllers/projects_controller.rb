@@ -25,6 +25,18 @@ class ProjectsController < ApplicationController
   def international
   end
 
+  def haiti
+  end
+
+  def dr
+  end 
+
+  def pbp
+  end
+
+  def bithlo
+  end
+
   def software
   end
 

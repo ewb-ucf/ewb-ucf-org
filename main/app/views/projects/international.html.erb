@@ -13,24 +13,26 @@
 
     <div id="content">
 
-        <a href="#" class="tile">
+        <!--Fix the links so they point to an action bla#bla -->           
+        <%= link_to "/projects/international/dr", class: "tile" do %>
             <div class="tile">
-                <img src="" width="90%" height="180px" style="display: inline-block;"/>
+                <%= image_tag "DR.png", :height =>"90%", :width => "100%", :class => 'tile' %>
+                <br>
                 <h4 style="font-size: 20pt;">Dominican Republic</h4>
-                <h5>Water Program</h5>
+                <h5>Sustainability Project</h5>
             </div>
-        </a>
+        <% end %>
 
-
-        <a href="#" class="tile">
+        <!--Fix the links so they point to an action bla#bla -->           
+        <%= link_to "/projects/international/haiti", class: "tile" do %>
             <div class="tile">
                 <%= image_tag "haiti2.jpg", :width => "100%", :class => 'tile' %>
                 <br>
                 <h4 class="sub">Mare Brignol</h4> &nbsp; <h4>Haiti</h4>
                 <br>
-                <h5>Water Development Program</h5>
+                <h5>Biofilter Project</h5>
             </div>
-        </a>
+        <% end %>
 
     </div> <!-- content -->
 

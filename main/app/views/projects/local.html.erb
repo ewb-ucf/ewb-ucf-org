@@ -13,24 +13,26 @@
 
     <div id="content">
 
-        <a href="#" class="tile">
+        <!--Fix the links so they point to an action bla#bla -->           
+        <%= link_to "/projects/local/bithlo", class: "tile" do %>
             <div class="tile">
-                <img src="" width="90%" height="180px" style="display: inline-block;"/><br>
-                <h4 >Bithlo, FL</h4><br>
-                <h5>Aquaponics</h5>
+                <%= image_tag "bithlo_logo.png", :height =>"50%", :width => "100%", :class => 'tile' %>
+                <br>
+                <h4 style="font-size: 20pt;">Bithlo</h4>
+                <h5>Aquaponics Project</h5>
             </div>
-        </a>
+        <% end %>
 
 
-        <a href="#" class="tile">
+        <!--Fix the links so they point to an action bla#bla -->           
+        <%= link_to "/projects/local/pbp", class: "tile" do %>
             <div class="tile">
-                <img src="" width="90%" height="180px" style="display: inline-block;"/>
+                <%= image_tag "rainwater.jpg", :height =>"50%", :width => "100%", :class => 'tile' %>
                 <br>
-                <h4 class="sub">PBP</h4> &nbsp; <h4>Student Co-op</h4>
-                <br>
-                <h5>Rainwater Catchment</h5>
+                <h4 style="font-size: 20pt;">PBP</h4>
+                <h5>Rainwater Harvesting and Storage</h5>
             </div>
-        </a>
+        <% end %>
 
     </div> <!-- content -->
 
