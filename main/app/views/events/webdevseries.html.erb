@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		EWB-UCF | Engineers Without Borders - University of Central Florida
+	</title>
+</head>
+<body>
+
+	<%= render "static_pages/nav" %>
+
+	 <div id="precontent"> Web Development <h4 class="sub">Riding the Rails</h4></div>
+
+	<div id="content">
+		<h2 style="margin: 0px 0px 10px 0px; float: left;">
+			What is it?
+		</h2>
+		<p class="about-ucf">
+			The Web Development Series gives UCF students the opportunity to learn and get comfortable with modern web development. This includes all basic web development languages and server side languages, relational databases, javascript, and then we get into the very popular Ruby on Rails Framework! Development in Ruby on Rails is one of the in demand skills looked for in the web dev world! It continues to grow in popularity and is the framework used in groupon, twitter, etc! Learn to Ride the Rails with us this summer!
+			<br><br>
+		</p>
+
+		<%= image_tag "logo-rails.png", :height => '180px', :class => 'tile' %>
+
+		<br/>
+		<h2 style="margin: 0px 0px 10px 0px; float: left;">
+			What's Covered?
+		</h2>
+		<p class="about-ucf">
+			This is being taught at an accelerated pace and the material builds on itself so it is recommended that you attend regularly unless you are super comfortable with a specific topic and don’t want review/practice! However, you can go at your own pace and it is not at all uncommon to have people at different levels so we will work with you wherever you are!
+			<br><br>
+			
+			Visit our <%= link_to 'github', 'http://github.com/ewb-ucf/webDevelopmentSeries_summer14' %> page for syllabus and coursework!
+			<br><br>
+		</p>
+
+		<%= image_tag "", :height => '180px', :class => 'tile' %>
+
+		<div class="divider"></div>
+
+	</div> <!-- content -->
+
+	<%= render "static_pages/footer" %>
+</body>
+</html>
