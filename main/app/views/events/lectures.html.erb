@@ -1,1 +1,52 @@
-<h1>THis page shows the lectures</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Lectures 
+    	<div style="text-align: right; font-size: 20px;"><a href="#">Request a Lecture Topic!</a></div>
+    </div>
+
+    <div id="content">
+
+         <a href="/lectures/scrapstogold" class="tile">
+            <div class="tile">
+                <%= image_tag "logo-bulb.png", :height => '180px', :class => 'tile' %>
+                <h4 style="font-size: 20pt;">Scraps to Gold</h4>
+                <br>
+                <h5>Engineering Innovation Series</h5>
+                 <h6>Fall 2014</h6>
+            </div>
+        </a>
+
+         <a href="/lectures/turbinepower" class="tile">
+            <div class="tile">
+                <%= image_tag "windturbine.jpg", :height => '180px', :class => 'tile' %>
+                <h4 style="font-size: 20pt;">Turbine Power </h4>
+                <br>
+                <h5>Professional Special Topics</h5>
+                 <h6>Fall 2014</h6>
+            </div>
+        </a>
+
+        <a href="/lectures/solarpower" class="tile">
+            <div class="tile">
+                <%= image_tag "solarpower.jpg", :height => '180px', :class => 'tile' %>
+                <h4 style="font-size: 20pt;">Solar Power</h4>
+                <br>
+                <h5>Professional Special Topics</h5>
+                 <h6>Fall 2014</h6>
+            </div>
+        </a>
+
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

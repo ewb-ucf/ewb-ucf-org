@@ -9,56 +9,72 @@
 
     <%= render "static_pages/nav" %>
 
-    <div id="precontent"> Workshops </div>
+    <div id="precontent"> Workshops 
+        <div style="text-align: right; font-size: 20px;"><a href="#">Request a Workshop Topic!</a></div>
+    </div>
 
     <div id="content">
 
-        <a href="#" class="tile">
+        <a href="/workshops/webdevseries" class="tile">
             <div class="tile">
                 <%= image_tag "logo-rails.png", :height => '180px', :class => 'tile' %>
                 <h4 style="font-size: 20pt;">Web Dev Series</h4>
                 <h5>Web Development</h5>
+                <h6>Summer 2014</h6>
             </div>
         </a>
 
 
-        <a href="#" class="tile">
+        <a href="workshops/matlabseries" class="tile">
             <div class="tile">
                 <%= image_tag "logo-octave.png", :height => '180px', :class => 'tile' %>
                 <h4>MATLAB &amp; Octave</h4>
                 <br>
                 <h5>Programming for Engineers</h5>
+                <h6>Fall 2014</h6>
             </div>
         </a>
 
-        <a href="#" class="tile">
+        <a href="/workshops/circuitseries" class="tile">
             <div class="tile">
                 <%= image_tag "logo-circuit.jpg", :height => '180px', :class => 'tile' %>
                 <h4>Circuits</h4>
                 <br>
                 <h5>Building &amp; Design</h5>
+                 <h6>Fall 2014</h6>
             </div>
         </a>
 
-
-        <a href="#" class="tile">
-            <div class="tile">
-                <%= image_tag "logo-bulb.png", :height => '180px', :class => 'tile' %>
-                <h4 style="font-size: 20pt;">Scraps to Gold</h4>
-                <br>
-                <h5>Engineering Innovation</h5>
-            </div>
-        </a>
-
-
-        <a href="#" class="tile">
+        <a href="/workshops/firstaid" class="tile">
             <div class="tile">
                 <%= image_tag "logo-aid.png", :height => '180px', :class => 'tile' %>
-                <h4>First Aid</h4>
+                <h4>3rd World First Aid</h4>
                 <br>
-                <h5 style="font-size: 12pt;">Healthcare in the Developing World</h5>
+                <h5 style="font-size: 12pt;">1st Aid with Minimal Resources</h5>
+                 <h6>Fall 2014</h6>
             </div>
         </a>
+
+          <a href="/workshops/engineeringtoolkit" class="tile">
+            <div class="tile">
+                <%= image_tag "engineeringtoolkit.jpg", :height => '180px', :class => 'tile' %>
+                <h4>Engineer's Toolkit</h4>
+                <br>
+                <h5 style="font-size: 12pt;">Design for Sustainable Power</h5>
+                 <h6>Fall 2014</h6>
+            </div>
+        </a>
+
+        <a href="/workshops/fabricationseries" class="tile">
+            <div class="tile">
+                <%= image_tag "lathe.jpg", :height => '180px', :class => 'tile' %>
+                <h4>Fabrication Series</h4>
+                <br>
+                <h5 style="font-size: 12pt;">Welding, Lathe work, CNC</h5>
+                 <h6>Spring 2015</h6>
+            </div>
+        </a>
+
 
     </div> <!-- content -->
 

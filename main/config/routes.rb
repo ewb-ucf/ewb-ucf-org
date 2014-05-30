@@ -77,16 +77,29 @@ match '/projects',  to:'projects#show',  via:'get'
     # match '/projects/other', to:'static_pages#under_construction', via:'get' 
 
 # Events
-# match '/events',  to:'events#show',  via:'get'
-match '/events', to:'static_pages#under_construction', via:'get' 
+match '/events',  to:'events#show',  via:'get'
+# match '/events', to:'static_pages#under_construction', via:'get' 
 
   # Workshops
   match '/workshops',  to:'events#workshops',  via:'get'
   # match '/workshops', to:'static_pages#under_construction', via:'get' 
 
+  # RECURRING WORKSHOPS THUS STATIC PAGES
+  match '/workshops/webdevseries',  to:'events#webdevseries',  via:'get'
+  match '/workshops/matlabseries',  to:'events#matlabseries',  via:'get'
+  match '/workshops/circuitseries',  to:'events#circuitseries',  via:'get'
+  match '/workshops/firstaid',  to:'events#firstaidseries',  via:'get'
+  match '/workshops/engineeringtoolkit',  to:'events#engineeringtoolkitseries',  via:'get'
+  match '/workshops/fabricationseries',  to:'events#fabricationseries',  via:'get'
+
   # Lectures
-  # match '/lectures',  to:'events#lectures',  via:'get'
-  match '/lectures', to:'static_pages#under_construction', via:'get'
+  match '/lectures',  to:'events#lectures',  via:'get'
+  # match '/lectures', to:'static_pages#under_construction', via:'get'
+
+      # RECURRING LECTURES THUS STATIC PAGES
+    match '/lectures/scrapstogold',  to:'events#scrapstogold',  via:'get'
+    match '/lectures/turbinepower',  to:'events#turbinepower',  via:'get'
+    match '/lectures/solarpower',  to:'events#solarpower',  via:'get'
 
 # Media (photos and videos)
 # match '/media',  to:'medias#show',  via:'get' 
