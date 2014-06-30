@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Our Projects
+    <p><%=link_to "Membership Application", new_user_path %></br></p>
+    </div>
+
+    <div id="content" style="overflow: hidden;">
+
+	<% @projects.each do |proj| %>
+        <% if proj.team == 'local' %>
+            <div id="local">
+        	<li><%= link_to proj.title, project_path(proj)%></li>
+        	<p><%= proj.description %></p>
+            </div>
+        <% end %>
+
+        <% if proj.team == 'international' %>
+            <div id="international">
+            <li><%= link_to proj.title, project_path(proj)%></li>
+            <p><%= proj.description %></p>
+            </div>
+        <% end %>
+
+        <% if proj.team == 'software' %>
+            <div id="software">
+            <li><%= link_to proj.title, project_path(proj)%></li>
+            <p><%= proj.description %></p>
+            </div>
+        <% end %>
+
+        <% if proj.team == 'other' %>
+            <div id="other">
+            <li><%= link_to proj.title, project_path(proj)%></li>
+            <p><%= proj.description %></p>
+            </div>
+        <% end %>
+    <% end %>
+
+	<%# if can? :create, Project %>
+	<%=link_to "Create new project", new_project_path %></br>
+	<%# end %>
+        
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

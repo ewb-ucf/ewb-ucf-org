@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> <%= @team.name%> <p><%= link_to 'Application', new_user_path %></p></div>
+
+    <div id="content">
+
+        <% @team.users.each do |usr| %>
+                <%= usr.firstname %>,<%= usr.lastname %><br/>
+                <%= usr.major %><br/>
+                <%= usr.bio %><br/>
+        <% end %>
+
+
+        <div class="divider"></div>     
+
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>
+
+
+
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %>

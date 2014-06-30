@@ -1,18 +1,15 @@
 source 'https://rubygems.org'
 
-
 # Custom added GEMS!
-gem 'mail_form'
-gem 'simple_form'
-
-# For YML security MCKINNLEY GO BACK AND ADD This
-# gem "econfig", require: "econfig/rails"
-
-# This is for rails 3 but should be updated to rails 4 standards
-gem 'protected_attributes'
+gem 'sorcery'
+gem 'paperclip'
 
 gem "cancan"
 
+gem 'mail_form'
+gem 'simple_form'
+
+gem 'friendly_id'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -51,3 +48,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin]

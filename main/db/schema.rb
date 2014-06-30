@@ -11,9 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140516172015) do
+ActiveRecord::Schema.define(version: 20140630180900) do
 
-  create_table "applications", force: true do |t|
+  create_table "blogs", force: true do |t|
+    t.string   "title"
+    t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -23,43 +25,94 @@ ActiveRecord::Schema.define(version: 20140516172015) do
     t.datetime "updated_at"
   end
 
-  create_table "lectures", force: true do |t|
+  create_table "events", force: true do |t|
+    t.string   "category"
+    t.string   "infolink"
+    t.string   "title"
+    t.text     "description"
+    t.datetime "date"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "slug"
   end
 
-  create_table "media", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "events_users", id: false, force: true do |t|
+    t.integer "event_id"
+    t.integer "user_id"
   end
 
-  create_table "members", force: true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "password"
-    t.string   "email"
-    t.string   "gender"
-    t.string   "pid"
-    t.integer  "points"
-    t.text     "aboutme"
+  create_table "photos", force: true do |t|
+    t.integer  "album_id"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "skills"
-    t.text     "experience"
-    t.string   "phone"
-    t.text     "personalprojects"
-    t.string   "otherinvolvement"
-    t.string   "timededication"
   end
 
   create_table "projects", force: true do |t|
+    t.string   "title",              null: false
+    t.integer  "team_id",            null: false
+    t.string   "status",             null: false
+    t.string   "about",              null: false
+    t.string   "description",        null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "slug"
+  end
+
+  create_table "projects_users", id: false, force: true do |t|
+    t.integer "user_id"
+    t.integer "project_id"
+  end
+
+  create_table "teams", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "project_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "workshops", force: true do |t|
+  create_table "teams_users", id: false, force: true do |t|
+    t.integer "team_id"
+    t.integer "user_id"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email",              null: false
+    t.string   "username",           null: false
+    t.string   "crypted_password",   null: false
+    t.string   "salt",               null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "bio"
+    t.string   "dob"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "major"
+    t.string   "minor"
+    t.string   "subscription"
+    t.string   "cvlink"
+    t.string   "resumelink"
+    t.string   "mysitelink"
+    t.string   "graduation"
+    t.string   "role"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "slug"
   end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
 
 end

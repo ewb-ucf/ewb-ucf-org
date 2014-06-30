@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		EWB-UCF | Engineers Without Borders - University of Central Florida
+	</title>
+</head>
+<body>
+
+	<%= render "static_pages/nav" %>
+
+	 <div id="precontent">
+	 	<%= @user.firstname %> <%= @user.lastname%>'s Profile<h4 class="sub"><%= @user.major%>, <%= @user.minor%></h4>
+
+	 	<p><%= link_to "Edit", edit_user_path%></p>
+	 </div>
+
+	<div id="content">
+		
+		<h2 style="margin: 0px 0px 10px 0px; float: left;">
+			Bio
+		</h2>
+		<p class="about-ucf">
+			<ul>
+				<li><% @user.teams.each do |t| %></li>
+				<li><%= t.title %></li>
+				<% end %>
+				<li>Role: <%= @user.role %></li>
+			</ul>
+			<p><%= @user.bio %></p>
+			<br><br>
+		</p>
+
+
+		<p><%= @user.graduation %></p>
+		<p><%= image_tag @user.image.url, :height => '180px', :class => 'tile' %></p>
+		<%#if @user.resumelink?%>
+			<a href="<% @user.resumelink %>"><%= @user.firstname%>'s Resume</a>
+		<%# end %>
+		<%#if @user.cvlink?%>
+			<a href="<% @user.cvlink %>"><%= @user.firstname%>'s CV</a>
+		<%# end %>
+
+
+		<h2 style="margin: 0px 0px 10px 0px; float: left;">
+			Projects
+		</h2>
+		<p class="about-ucf">
+			<% @user.projects.each do |proj| %>
+				<%= link_to proj.title, project_path(proj) %>
+				<%= link_to proj.description, project_path(proj) %>
+				<p><%= image_tag proj.image.url, :height => '180px', :class => 'tile'%></p>
+			<% end %>
+			<%# if user is logged in to their profile they see this%>
+				<%= link_to "Add a New Project", new_project_path %>
+			<%# end %>
+			<br><br>
+		</p>		
+
+		
+		<h2 style="margin: 0px 0px 10px 0px; float: left;">
+			Workshops and Minicourses
+		</h2>
+		<p class="about-ucf">
+			<%# @user.events.each do |event| %>
+				<%#= link_to event.title, event_path(event) %>:<%#= link_to event.date %>
+				<%#= link_to event.description, event_path(event) %>
+				<p><%#= image_tag event.image.url, :height => '180px', :class => 'tile'%></p>
+			<%# end %>
+			<%# if user is logged in to their profile they see this%>
+				<p>Is one of the events you attended not here? Email us for questions</p>
+			<%# end %>
+			<br><br>
+		</p>		
+
+			<br><br><br>
+		<div class="divider"></div>
+
+	</div> <!-- content -->
+
+	<%= render "static_pages/footer" %>
+</body>
+</html>

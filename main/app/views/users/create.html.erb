@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Congratulations!</div>
+
+    <div id="content" style="overflow: hidden;">
+		<%= link_to "Click here",  edit_user_path(@user) %> to become a member!
+
+        <h6>Membership Benefits</h6>
+        <ul>
+            <li>Access to all online workshops and courseware</li>
+            <li>Access to events</li>
+            <li>Opportunity to apply for project teams</li>
+            <li>Access to networking through the EWB Professional Chapter</li>
+        </ul>
+
+		<br/><br/>
+
+		<%= link_to 'Back', users_path %>
+		
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

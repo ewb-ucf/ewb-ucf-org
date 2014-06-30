@@ -1,9 +1,17 @@
 class StaticPagesController < ApplicationController
-    def home
+	def index
+		#This is where our home page goes
+		@teams = Team.all
+	end
 
-    end
+	def show
+		#This is where our about page goes
+	end
 
-    def about
+	def under_construction
+		#This is for the underconstruction page
+	end
 
-    end
+	def partners
+	end
 end

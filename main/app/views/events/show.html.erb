@@ -9,103 +9,44 @@
 
     <%= render "static_pages/nav" %>
 
-    <div id="precontent"> Workshops and Lectures
-        <div style="text-align: right; font-size: 20px;"><a href="#">Request a Workshop Topic!</a></div>
-    </div>
+     <div id="precontent">
+     <%= @event.title.capitalize %>
+     <h4 class="sub"> <%= @event.category.capitalize %></h4>
+     <p><%=link_to "Delete Event", event_path(@event), method: :delete, data: {confirm: "Really delete the event?"}%> <%= link_to "Edit", edit_event_path(@event) %></p>
+
+     </div>
 
     <div id="content">
+        <h2 style="margin: 0px 0px 10px 0px; float: left;">
+            What is it?
+        </h2>
+        <p class="about-ucf"><%= @event.description %><br><br></p>
 
-        <a href="/workshops/webdevseries" class="tile">
-            <div class="tile">
-                <%= image_tag "logo-rails.png", :height => '180px', :class => 'tile' %>
-                <h4 style="font-size: 20pt;">Web Dev Series</h4>
-                <h5>Web Development</h5>
-                <h6>Summer 2014</h6>
-            </div>
-        </a>
+        <p><%= image_tag @event.image.url %></p>
+
+        <br/>
+        <h2 style="margin: 0px 0px 10px 0px; float: left;">
+            What's Covered?
+        </h2>
+            Visit our <%= link_to 'github', @event.infolink %> page for syllabus and coursework!
+            <br><br>
+        </p>
+
+        <%= image_tag "", :height => '180px', :class => 'tile' %>
+
+        <div class="divider"></div>
 
 
-        <a href="workshops/matlabseries" class="tile">
-            <div class="tile">
-                <%= image_tag "logo-octave.png", :height => '180px', :class => 'tile' %>
-                <h4>MATLAB &amp; Octave</h4>
-                <br>
-                <h5>Programming for Engineers</h5>
-                <h6>Fall 2014</h6>
-            </div>
-        </a>
-
-        <a href="/workshops/circuitseries" class="tile">
-            <div class="tile">
-                <%= image_tag "logo-circuit.jpg", :height => '180px', :class => 'tile' %>
-                <h4>Circuits</h4>
-                <br>
-                <h5>Building &amp; Design</h5>
-                 <h6>Fall 2014</h6>
-            </div>
-        </a>
-
-        <a href="/workshops/firstaid" class="tile">
-            <div class="tile">
-                <%= image_tag "logo-aid.png", :height => '180px', :class => 'tile' %>
-                <h4>3rd World First Aid</h4>
-                <br>
-                <h5 style="font-size: 12pt;">1st Aid with Minimal Resources</h5>
-                 <h6>Fall 2014</h6>
-            </div>
-        </a>
-
-          <a href="/workshops/engineeringtoolkit" class="tile">
-            <div class="tile">
-                <%= image_tag "engineeringtoolkit.jpg", :height => '180px', :class => 'tile' %>
-                <h4>Engineer's Toolkit</h4>
-                <br>
-                <h5 style="font-size: 12pt;">Design for Sustainable Power</h5>
-                 <h6>Fall 2014</h6>
-            </div>
-        </a>
-
-        <a href="/workshops/fabricationseries" class="tile">
-            <div class="tile">
-                <%= image_tag "lathe.jpg", :height => '180px', :class => 'tile' %>
-                <h4>Fabrication Series</h4>
-                <br>
-                <h5 style="font-size: 12pt;">Welding, Lathe work, CNC</h5>
-                 <h6>Spring 2015</h6>
-            </div>
-        </a>
-
-        <a href="/lectures/scrapstogold" class="tile">
-            <div class="tile">
-                <%= image_tag "logo-bulb.png", :height => '180px', :class => 'tile' %>
-                <h4 style="font-size: 20pt;">Scraps to Gold</h4>
-                <br>
-                <h5>Engineering Innovation Series</h5>
-                 <h6>Fall 2014</h6>
-            </div>
-        </a>
-
-         <a href="/lectures/turbinepower" class="tile">
-            <div class="tile">
-                <%= image_tag "windturbine.jpg", :height => '180px', :class => 'tile' %>
-                <h4 style="font-size: 20pt;">Turbine Power </h4>
-                <br>
-                <h5>Professional Special Topics</h5>
-                 <h6>Fall 2014</h6>
-            </div>
-        </a>
-
-        <a href="/lectures/solarpower" class="tile">
-            <div class="tile">
-                <%= image_tag "solarpower.jpg", :height => '180px', :class => 'tile' %>
-                <h4 style="font-size: 20pt;">Solar Power</h4>
-                <br>
-                <h5>Professional Special Topics</h5>
-                 <h6>Fall 2014</h6>
-            </div>
-        </a>
-
+    <%= link_to "Back to all Events", events_path%></br>
     </div> <!-- content -->
+
+    <%# If admin is logged in show event attendees %>
+    <h2>Event Attendees</h2>
+    <ul>
+        <% @event.users.each do |u| %>
+        <li><% u.firstname %></li>
+        <% end %>
+    </ul>
 
     <%= render "static_pages/footer" %>
 </body>

@@ -1,0 +1,77 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%# If user is new and has not role assign "user"%>
+  <% if @user.role == nil %>
+    <% @user.role = "user" %>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.text_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= f.radio_button :subscription, 'student', :checked => true %> 
+    <%= label :subscription_student, 'Student Weekly Newsletter' %><br/>
+    <%= f.radio_button :subscription, 'alum' %> 
+    <%= label :subscription_alum, 'Alumni Monthly Newsletter' %><br/>
+    <%= f.radio_button :subscription, 'nil' %> 
+    <%= label :subscription_alum, 'No Newsletter' %><br/>
+  </div>
+
+  <%"""Only Admin can change the role of the user """%>
+  <% if can? :manage, @user %>
+    <%= f.check_box :role, "admin" %>
+    <%= label 'Admin' %>
+
+    <%= f.check_box :role, "member" %> 
+    <%= label 'Member' %>
+
+    <%= f.check_box :role, "eboard" %> 
+    <%= label 'EBoard' %>
+
+    <% if @user.role == nil %>
+      <%= f.check_box :role, "user", :checked => true %> 
+      <%= label 'User' %>
+    <% else %>
+      <%= f.check_box :role, "user" %> 
+      <%= label 'User' %>
+    <% end %>
+  
+  <% end %>
+
+  <div class="field">
+    <h6>Help us change the world, one community at a time!</h6>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Create Free Account" %>
+  </div>
+
+<% end %>

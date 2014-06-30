@@ -13,29 +13,19 @@
 	<ul>
         <%= raw li 'About', '/about' %>
 
-        <li> <%= link_to 'Our People', '#' %>
+        <li> <%= link_to 'Our People', teams_path %>
     	    <ul>
                 <span class="nav">
-                    <%= raw li 'Executive Board'   , '/exec_board'         %>
-                    <%= raw li 'Intl Project Team' , '/intl_project_team'  %>
-                    <%= raw li 'Local Project Team', '/local_project_team' %>
-                    <%= raw li 'Software Team'     , '/software_team'      %>
-                    <%= raw li 'Alumni'            , '/alumni'             %>
-                    <%= raw li 'Our Partners'      , '/partners'           %>
+                    <%# FIX ME MCKINNLEY ROSE %>
+                    <%# @teams.each do |t| %>
+                        <%#= link_to t.name.titleize, team_path(t)%>
+                    <%# end %>
+                    <%= raw li 'Our Partners', '/partners' %>
                 </span>
     	    </ul>	
         </li>
 
-        <li> <%= link_to 'Our Projects', '/projects' %>             
-            <ul> 
-                <span class="nav"> 
-                    <%= raw li 'International Projects', '/projects/international' %> 
-                    <%= raw li 'LocalProjects'         , '/projects/local'         %> 
-                    <%= raw li 'Software Projects'     , '/projects/software'      %> 
-                    <%= raw li 'Other Projects'        , '/projects/other'         %> 
-                </span>             
-            </ul>         
-        </li>
+        <li> <%= link_to 'Our Projects', projects_path %></li>
 
 	    <li> <%= link_to 'Media', '/media' %>
 		    <ul>

@@ -1,16 +1,27 @@
-<div align="center">
-  <h3>Send A message to Us</h3>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+	<%= render "static_pages/nav" %>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    <div id="precontent"> Contact Us
     </div>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-    </div>
-  <% end %>
-</div>
+
+    <div id="content" style="overflow: hidden;">
+		
+		<%= simple_form_for @contact do |f| %>
+		  <%= f.input :name, :required => true %>
+		  <%= f.input :email, :required => true %>
+		  <%= f.input :message, :as => :text, :required => true %>
+		  <%= f.button :submit, 'Send message' %>
+		<% end %>
+	
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

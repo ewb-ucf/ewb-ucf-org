@@ -1,46 +1,50 @@
 class ProjectsController < ApplicationController
-  
-  def show
-  end
 
-  def create
-  end
+	include ProjectsHelper
 
-  # Create a new project
-  def new
-  end
+	#Require authentication for new, create, edit, destroy, update actions
+	before_filter :require_login, except: [:index, :show]
+	
+	def index
+		@projects = Project.all
+	end
 
-  def edit
-  end
+	def show
+		#This page shows all the projects of a certain type (local, international, software, etc)
+		@project = Project.friendly.find(params[:id])
+	end
 
-  def update
-  end
+	def new
+		#This page allows only privilaged users to create new projects
+		@project = Project.new
 
-  def destroy
-  end
+		#Make teams accessible?
+		@teams = Team.all
+	end
 
-  def local
-  end
+	def create
+		@project = Project.new(project_params)
+		@project.save
 
-  def international
-  end
+		redirect_to project_path(@project)
+	end
 
-  def haiti
-  end
+	def edit
+		@project = Project.friendly.find(params[:id])
+	end
 
-  def dr
-  end 
+	def update
+		@project = Project.friendly.find(params[:id])
+		@project.update(project_params)
 
-  def pbp
-  end
+		redirect_to project_path(@project)
+	end
 
-  def bithlo
-  end
+	def destroy
+    	@project = Project.friendly.find(params[:id])
+    	@project.destroy
 
-  def software
-  end
-
-  def other
-  end
+    	redirect_to projects_path
+  	end
 
 end

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Get Involved <h4 class="sub"> Change the world, one community at a time!</h4>
+    </div>
+
+    <div id="content" style="overflow: hidden;">
+        <%# User must login or signup to access the membership application %>
+		<% if not logged_in? %>
+			<%= render 'form' %>
+        <% else %>
+            <% render 'form_membership' %>
+		<% end %>
+
+		<br/><br/>
+
+		<%= link_to 'Back', users_path %>
+		
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>
