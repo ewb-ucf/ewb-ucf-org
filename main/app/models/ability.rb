@@ -7,37 +7,33 @@ class Ability
        
        #ACCESS PERMISSIONS IN ORDER OF SCOPE
 
-       #Admin have access to everything
-        if user.role == "admin"
-          can :manage, :all
-        else
-          can :read, :all
-        end
+       can :read, :all
+       can :create, User
 
-        #Eboard can manage projects, events, media
-        if user.role == "eboard"
-          can :manage, Project
-          can :manage, Event
-          #can :manage, Media
-        else
-          can :read, Project
-          can :read, Event
-          #can :read, Media
-        end
+      if user.role == "admin"
+        can :manage, :all
+      else
+        can :read, :all
 
-        #Members can manage thier user own profile page
-        if user.role == "member"
-          can :manage, User do |usr|
+        #MOVE OUTSIDE OF IF WHEN DONE TESTING
+        #User can edit their own profile
+        can :manage, User do |usr|
             usr.try(:user) == user
           end
-        else
-          can :read, :all
-        end
 
-          #Users can read projects, events, media
-          #if user.role == "user"
-          #  can :read, :all
-          #end
+        #User can manage their own blogs
+        can :manage, Blog do |blog|
+            blog.try(:user_id) == user.id
+          end
+
+        #Team managers can manage their team's projects
+        #can :manage, Project do |project|
+        #    project.try(:user_id) == user.id
+        #  end
+
+        cannot :index, User
+      end
+     
 
     # The first argument to `can` is the action you are giving the user 
     # permission to do.

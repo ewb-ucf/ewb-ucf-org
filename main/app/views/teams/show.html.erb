@@ -9,7 +9,9 @@
 
     <%= render "static_pages/nav" %>
 
-    <div id="precontent"> <%= @team.name%> <p><%= link_to 'Application', new_user_path %></p></div>
+    <div id="precontent"> <%= @team.name%>
+        <p><%#= link_to "Apply", new_team_application_path(@team) %></p>
+    </div>
 
     <div id="content">
 
@@ -19,16 +21,14 @@
                 <%= usr.bio %><br/>
         <% end %>
 
-
         <div class="divider"></div>     
 
+    <% if can? :manage, Team %>
+        <%= link_to 'Edit', edit_team_path(@team) %>
+        <%= link_to 'Create New Team Project', new_team_project_path(@team) %>
+    <% end %>
     </div> <!-- content -->
 
     <%= render "static_pages/footer" %>
 </body>
 </html>
-
-
-
-<%= link_to 'Edit', edit_team_path(@team) %> |
-<%= link_to 'Back', teams_path %>

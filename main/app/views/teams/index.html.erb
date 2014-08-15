@@ -9,7 +9,11 @@
 
     <%= render "static_pages/nav" %>
 
-    <div id="precontent"> Our Project Teams<p><%= link_to 'Create a New Team', new_team_path %></p></div>
+    <div id="precontent"> Our Project Teams
+    <% if can? :create, Team %>
+    <p><%= link_to 'Create a New Team', new_team_path %></p>
+    <% end %>
+    </div>
 
     <div id="content" style="overflow: hidden;">
 
@@ -17,8 +21,10 @@
           <h3><%= link_to team.name, team %></h3><br/><br/>
           <%= team.description %><br/><br/>
           
-          <%= link_to 'Edit', edit_team_path(team) %>
-          <%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %><br/><br/><br/>
+          <% if can? :manage, Team %>
+            <%= link_to 'Edit', edit_team_path(team) %> |
+            <%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %><br/><br/><br/>
+          <% end %>
 
       <% end %><br/>
 

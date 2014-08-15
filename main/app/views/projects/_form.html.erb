@@ -12,6 +12,10 @@
 
 <h3>What team is working on this project?</h3>
 <p>
+  <% if @teams == [] %>
+    <%# McKinnley Rose. Fix this shit. %>
+    <strong>WARNING: A team must be created first</strong>
+  <% end %>
   <%# List the teams and check the teams available%>
   <% @teams.each do |t| %>
     <%= p.radio_button(:team_id, t.id) %> 

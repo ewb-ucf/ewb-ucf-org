@@ -1,14 +1,16 @@
 class TeamsController < ApplicationController
+
+  #Must have this line for CanCan
+  load_and_authorize_resource
+
   before_action :set_team, only: [:show, :edit, :update, :destroy]
 
-  # GET /teams
-  # GET /teams.json
+  #Shows a list of our teams and thier descriptions
   def index
     @teams = Team.all
   end
 
-  # GET /teams/1
-  # GET /teams/1.json
+  #Shows a list of team members and links to their profiles
   def show
     #@team = Team.find(params[:id])
     #if request.path != team_path(@team)

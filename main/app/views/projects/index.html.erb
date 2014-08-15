@@ -10,44 +10,26 @@
     <%= render "static_pages/nav" %>
 
     <div id="precontent"> Our Projects
-    <p><%=link_to "Membership Application", new_user_path %></br></p>
     </div>
 
     <div id="content" style="overflow: hidden;">
 
-	<% @projects.each do |proj| %>
-        <% if proj.team == 'local' %>
+	<% @teams.each do |team| %>
             <div id="local">
-        	<li><%= link_to proj.title, project_path(proj)%></li>
-        	<p><%= proj.description %></p>
+            <%  %>
+        	<li><%= link_to team.project.title, team_project_path(team)%></li>
+        	<p><%= team.project.description %></p>
+
+            <% if can? :manage, Project %>
+                <p><%= link_to "Edit", edit_team_project_path(team) %> | 
+                <%=link_to "Delete", team_project_path(team), method: :delete, data: {confirm: "Really delete the project?"}%>
+            <% end %>
             </div>
         <% end %>
 
-        <% if proj.team == 'international' %>
-            <div id="international">
-            <li><%= link_to proj.title, project_path(proj)%></li>
-            <p><%= proj.description %></p>
-            </div>
-        <% end %>
-
-        <% if proj.team == 'software' %>
-            <div id="software">
-            <li><%= link_to proj.title, project_path(proj)%></li>
-            <p><%= proj.description %></p>
-            </div>
-        <% end %>
-
-        <% if proj.team == 'other' %>
-            <div id="other">
-            <li><%= link_to proj.title, project_path(proj)%></li>
-            <p><%= proj.description %></p>
-            </div>
-        <% end %>
-    <% end %>
-
-	<%# if can? :create, Project %>
+	<% if can? :create, Project %>
 	<%=link_to "Create new project", new_project_path %></br>
-	<%# end %>
+	<% end %>
         
     </div> <!-- content -->
 

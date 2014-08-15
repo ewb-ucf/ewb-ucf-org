@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :require_admin, only: [:index]
+  
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+      @users = User.all
   end
 
   # GET /users/1
@@ -12,26 +14,33 @@ class UsersController < ApplicationController
   def show
     #This is the users profile page
     @user = User.friendly.find(params[:id])
+
+
+    #Needed to authorize CanCan
+    authorize! :show, @user
   end
 
-  # GET /users/new
   def new
     @user = User.new
   end
 
-  # GET /users/1/edit
   def edit
     @user = User.friendly.find(params[:id])
   end
 
-  # POST /users
-  # POST /users.json
   def create
     @user = User.new(user_params)
 
+    #If users is the first user in the DB, they are admin
+    if User.first == nil
+      @user.role = "admin"
+    elsif @user.role == nil
+      @user.role = "user"
+    end
+
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to login_path, notice: 'Your account has been created!' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -43,6 +52,12 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    if @user.role == "user"
+      @user.role = "member"
+      #@user.password = current_user.password
+      #@user.password_confirmation = current_user.password_confirmation
+    end
+
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
@@ -70,8 +85,14 @@ class UsersController < ApplicationController
       @user = User.friendly.find(params[:id])
     end
 
+    def require_admin
+      if current_user.role != "admin"
+        redirect_to root_path
+      end
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:username, :email, :password, :password_confirmation, :image, :team_ids => [], :project_ids => [], :event_ids => [])
+      params.require(:user).permit(:role, :bio, :dob, :firstname, :lastname, :major, :minor, :subscription, :cvlink, :resumelink, :mysitelink, :graduation, :username, :email, :password, :password_confirmation, :image, :team_ids => [], :project_ids => [], :event_ids => [], :bloggable_ids => [])
     end
 end

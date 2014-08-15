@@ -39,8 +39,10 @@
 	    <li><%= link_to "Events", '/events' %>
             <ul>
                 <span class="nav">
-                    <%= raw li 'Workshops', '/workshops' %>
-                    <%= raw li 'Lectures' , '/lectures'  %>
+                    <%# FIX ME MCKINNLEY ROSE %>
+                    <%# @events.each do |e| %>
+                        <%#= link_to e.name.titleize, event_path(e)%>
+                    <%# end %>
                 </span>
             </ul>
         </li>

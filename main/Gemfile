@@ -1,15 +1,28 @@
 source 'https://rubygems.org'
 
-# Custom added GEMS!
+### Custom added GEMS!####
+
+#Gem for user login/out
 gem 'sorcery'
+
+#Gem for adding file attachments to models
 gem 'paperclip'
 
+#Gem to make permissions easy
 gem "cancan"
 
+#Easy form gems
 gem 'mail_form'
 gem 'simple_form'
 
+#Gem for making urls pretty
 gem 'friendly_id'
+
+# Stylesheets gem for Blogs
+gem 'twitter-bootstrap-rails'
+
+#Gem for making console output pretty
+gem 'hirb'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'

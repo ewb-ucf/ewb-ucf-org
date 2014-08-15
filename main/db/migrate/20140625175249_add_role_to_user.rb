@@ -11,6 +11,8 @@ class AddRoleToUser < ActiveRecord::Migration
     add_column :users, :resumelink,     :string
     add_column :users, :mysitelink,     :string
     add_column :users, :graduation,     :string
+    add_column :users, :bloggable_id,   :integer
+    add_column :users, :bloggable_type, :string
 
     add_column :users, :role,           :string
 

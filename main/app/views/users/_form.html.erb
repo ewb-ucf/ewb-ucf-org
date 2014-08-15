@@ -11,9 +11,18 @@
     </div>
   <% end %>
 
-  <%# If user is new and has not role assign "user"%>
+  <%# If user is first time user and has no role set up %>
+  <%# they get a "user" %>
   <% if @user.role == nil %>
-    <% @user.role = "user" %>
+      <% @user.role = "user" %> 
+  <% end %>
+
+  <% if can? :manage, @user %>
+    <%= f.check_box :role, :value => "member" %> 
+    <%= f.label 'Member' %>
+
+    <%= f.check_box :role, :value => "eboard" %> 
+    <%= f.label 'EBoard' %>
   <% end %>
 
   <div class="field">
@@ -37,34 +46,10 @@
   </div>
 
   <div class="field">
-    <%= f.radio_button :subscription, 'student', :checked => true %> 
-    <%= label :subscription_student, 'Student Weekly Newsletter' %><br/>
-    <%= f.radio_button :subscription, 'alum' %> 
-    <%= label :subscription_alum, 'Alumni Monthly Newsletter' %><br/>
-    <%= f.radio_button :subscription, 'nil' %> 
-    <%= label :subscription_alum, 'No Newsletter' %><br/>
+    <%= f.radio_button :subscription, 'student', :checked => true %><%= label :subscription_student, 'Student Weekly Newsletter' %>
+    <%= f.radio_button :subscription, 'alum' %><%= label :subscription_alum, 'Alumni Monthly Newsletter' %>
+    <%= f.radio_button :subscription, 'nil' %><%= label :subscription_alum, 'No Newsletter' %><br/>
   </div>
-
-  <%"""Only Admin can change the role of the user """%>
-  <% if can? :manage, @user %>
-    <%= f.check_box :role, "admin" %>
-    <%= label 'Admin' %>
-
-    <%= f.check_box :role, "member" %> 
-    <%= label 'Member' %>
-
-    <%= f.check_box :role, "eboard" %> 
-    <%= label 'EBoard' %>
-
-    <% if @user.role == nil %>
-      <%= f.check_box :role, "user", :checked => true %> 
-      <%= label 'User' %>
-    <% else %>
-      <%= f.check_box :role, "user" %> 
-      <%= label 'User' %>
-    <% end %>
-  
-  <% end %>
 
   <div class="field">
     <h6>Help us change the world, one community at a time!</h6>

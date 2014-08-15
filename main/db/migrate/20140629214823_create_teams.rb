@@ -5,6 +5,7 @@ class CreateTeams < ActiveRecord::Migration
       t.text 	:description
       t.integer :project_id
       t.integer :user_id
+      t.integer :application_id	
 
       t.timestamps
     end

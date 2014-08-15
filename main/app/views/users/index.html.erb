@@ -13,19 +13,28 @@
 
     <div id="content">
 
-        <% @users.each do |usr| %>
-            <p><%= usr.firstname %>, <%= usr.lastname %></p><br/>
-            <%= link_to "View", user_path(usr)%>
-            <% usr.teams.each do |t| %>
-                <%= t.name%><br/>
-                <%= usr.major %><br/>
-                <%= usr.bio %><br/>
-          <% end %>
+        <%= @users.each do |usr| %>
+            <% if usr.role ||= "user" %>
+                <h3><%= usr.role.titleize %></h3>
+                <p><%= usr.username %></p>
+                <p><%= usr.email %></p>
+                <div class="divider"></div>  
+            <% else %>
+                <h3><%= usr.role.titleize %></h3>
+                <p><%= usr.firstname %>, <%= usr.lastname %></p><br/>
+                <%= link_to "View", user_path(usr)%>
+                <%= usr.teams.each do |t| %>
+                    <%= t.name %><br/>
+                    <%= usr.major %><br/>
+                    <%= usr.bio %><br/>
+                <% end %>
+                <div class="divider"></div>  
+            <% end %>
         <% end %>
         <div class="divider"></div>   
 
     <% if can? :create, Project %>
-    <%=link_to "Create new User", new_user_path %></br>
+        <%=link_to "Create new User", new_user_path %></br>
     <% end %>  
 
     </div> <!-- content -->

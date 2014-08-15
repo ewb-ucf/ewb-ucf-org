@@ -7,6 +7,8 @@ class CreateEvents < ActiveRecord::Migration
       t.text :description
       t.datetime :date
       t.string :location
+      t.integer :bloggable_id
+      t.string :bloggable_type
 
       t.timestamps
     end

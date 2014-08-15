@@ -1,8 +1,9 @@
 class StaticPagesController < ApplicationController
+
 	def index
 		#This is where our home page goes
 		@teams = Team.all
-	end
+	end	
 
 	def show
 		#This is where our about page goes

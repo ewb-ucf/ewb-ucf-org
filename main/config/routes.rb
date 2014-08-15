@@ -1,30 +1,37 @@
 Rails.application.routes.draw do
 
-resources :blogs
-
-#Alias the URLS to people "people/" instead of "teams/"
-resources :teams, :path => "people"
-
-#Get routes to the "projects" controller actions
-resources :projects
-
 # Home Page
-#match '/', to:'static_pages#index', via:'get' 
 root 'static_pages#index'
 
-resources :events
-resources :users
+resources :donations
+
+#Alias the URLS to people "people/" instead of "teams/"
+resources :teams, :path => "people" do
+#  resource :application
+  resources :projects
+end
+
+#Projects, events and users all have many blogs
+# where blog is polymorphic
+#resources :users, :has_many => :blogs
+resources :projects, :has_many => :blogs
+resources :events, :has_many => :blogs
+
+#users/username/blog
+resources :users do
+  resources :projects
+  resources :blogs
+end
 
 #Add user sessions resource with only specific actions
 resources :user_sessions, only: [:new, :create, :destroy]
+
 get 'login' => 'user_sessions#new'
 get 'logout' => 'user_sessions#destroy'
   
 # About Us Tab
-match '/about', to:'static_pages#show', via:'get' 
-# match '/about', to:'static_pages#under_construction', via:'get' 
+match '/about', to:'static_pages#show', via:'get'
 
-  
 # Contact us Page
 match '/contact', to:'contacts#new', via:'get'
 resources "contacts", only: [:new, :create]

@@ -11,18 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140630180900) do
+ActiveRecord::Schema.define(version: 20140706181455) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
+    t.text     "description"
     t.text     "content"
+    t.string   "bloggable_type"
+    t.integer  "bloggable_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "slug"
   end
 
   create_table "contacts", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "donations", force: true do |t|
+    t.integer  "amount"
+    t.text     "comment"
+    t.string   "donorname"
+    t.string   "companyname"
+    t.boolean  "recurring"
+    t.integer  "project_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "donations_projects", force: true do |t|
+    t.integer "donation_id"
+    t.integer "project_id"
   end
 
   create_table "events", force: true do |t|
@@ -32,6 +52,8 @@ ActiveRecord::Schema.define(version: 20140630180900) do
     t.text     "description"
     t.datetime "date"
     t.string   "location"
+    t.integer  "bloggable_id"
+    t.string   "bloggable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -59,6 +81,12 @@ ActiveRecord::Schema.define(version: 20140630180900) do
     t.string   "status",             null: false
     t.string   "about",              null: false
     t.string   "description",        null: false
+    t.integer  "bloggable_id"
+    t.string   "bloggable_type"
+    t.integer  "fundingraised"
+    t.integer  "fundinggoal"
+    t.date     "fundingstartdate"
+    t.date     "fundingenddate"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -78,11 +106,12 @@ ActiveRecord::Schema.define(version: 20140630180900) do
     t.text     "description"
     t.integer  "project_id"
     t.integer  "user_id"
+    t.integer  "application_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "teams_users", id: false, force: true do |t|
+  create_table "teams_users", force: true do |t|
     t.integer "team_id"
     t.integer "user_id"
   end
@@ -105,6 +134,8 @@ ActiveRecord::Schema.define(version: 20140630180900) do
     t.string   "resumelink"
     t.string   "mysitelink"
     t.string   "graduation"
+    t.integer  "bloggable_id"
+    t.string   "bloggable_type"
     t.string   "role"
     t.string   "image_file_name"
     t.string   "image_content_type"
