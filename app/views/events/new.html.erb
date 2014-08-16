@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%#= render 'nav' %>
+
+    <div id="precontent"> Create A New EWB-UCF Event
+        <h4 class="sub">
+            <% if can? :manage, @event %>
+                <%= link_to "Create New Event", new_event_path %>
+            <% end %>
+        </h4>
+    </div>
+
+    <div id="content" style="overflow: hidden;">
+		<%= render partial: 'form' %>
+
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

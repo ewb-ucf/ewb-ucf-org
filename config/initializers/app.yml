@@ -1,0 +1,9 @@
+development: &defailts
+	host: "localhost:3000"
+
+production:
+	<<: *defaults
+	host: "ewb-ucf.org"
+
+test:
+	<<: *defaults

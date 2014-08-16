@@ -1,4 +1,0 @@
-websiteMain
-===========
-
-RoR main website

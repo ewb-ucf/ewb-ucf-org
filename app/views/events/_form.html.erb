@@ -1,0 +1,58 @@
+<%= form_for(@event, html: {multipart: true}) do |ev| %>
+<ul><% @event.errors.full_messages.each do |error|%>
+	<li><%= error %></li>
+	<% end %>
+</ul>
+
+<h3>Enter an event title:</h3>
+<p>
+	<%=ev.label :title %><br/>
+	<%=ev.text_field :title %>
+</p>
+
+<h3>Enter an event description:</h3>
+<p>
+	<%=ev.label :description %><br/>
+	<%=ev.text_area :description %>
+</p>
+
+<h3>Event Category:</h3>
+<p>
+	<%=ev.label "Workshop" %>
+	<%=ev.check_box :category, {}, "workshop", "workshop" %><br/>
+
+	<%=ev.label "Lecture" %>
+	<%=ev.check_box :category, {}, "lecture", "lecture" %><br/>
+
+	<%=ev.label "Activity" %>
+	<%=ev.check_box :category, {}, "activity", "activity" %><br/>
+</p>
+
+<h3>When is the event?</h3>
+<p>
+	<%=ev.label :date %><br/>
+	<%=ev.date_field :date %>
+</p>
+
+<h3>Where is the event?</h3>
+<p>
+	<%=ev.label :location %><br/>
+	<%=ev.datetime_field :location %>
+</p>
+
+<h3>Link to more event info (optional)</h3>
+<p>
+	<%=ev.label :infolink %><br/>
+	<%=ev.url_field :infolink %>
+</p>
+
+<p>
+	<%= ev.label :image, "Attach Event Logo"%></p>
+	<%= ev.file_field :image %>
+</p>
+
+<p>
+	<%=ev.submit "Create Event" %>
+</p>
+
+<% end %>

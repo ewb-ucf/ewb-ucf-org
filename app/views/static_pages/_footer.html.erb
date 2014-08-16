@@ -1,0 +1,8 @@
+<% 
+	# if home page 
+    footer_class = current_page?('/') ? 'home' : 'not-home' 
+%>
+
+<footer class="<%= footer_class %>">
+	    Copyright &copy <%= Time.new.year %> by Engineers Without Borders - UCF
+</footer>

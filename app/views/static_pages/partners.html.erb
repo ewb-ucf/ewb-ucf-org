@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Our Partners </div>
+
+    <div id="content">
+
+        <span style="float: left; width: 43%; padding: 3% 0%;">
+            <%= image_tag "logo2.png", :width => "90%", :class => 'scfl-logo' %>
+        </span>
+        <span  style="width: 55%;">
+
+            <p class="partner">
+                <b>The Space Coast Florida Profesional Chapter</b> is a
+                professional chapter of Engineers Without Borders - USA.
+                EWB-USA is a nonprofit humanitarian organization 
+                established to support community-driven development programs 
+                worldwide through partnerships that design and implement 
+                sustainable engineering projects, while creating transformative 
+                experiences that enrich global perspectives and create 
+                responsible leaders.
+                <font style="color: #095aa6"> ... </font>
+                <a href="#" class="resume">read more</a>
+            </p>   
+        </span>
+
+        <% # uncomment when adding new pages %>
+        <!-- <div class="divider"></div> -->  
+
+    </div> <!-- content -->
+
+    
+    <div id="precontent" style="margin: 3% 0% 0% 0%;"> Our Sponsors </div>
+
+    <div id="content">
+
+        <%= image_tag "logo-ucoa.png"%>
+
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

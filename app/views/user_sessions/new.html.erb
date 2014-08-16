@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        EWB-UCF | Engineers Without Borders - University of Central Florida
+    </title>
+</head>
+<body>
+
+    <%= render "static_pages/nav" %>
+
+    <div id="precontent"> Login </div>
+
+    <div id="content" style="overflow: hidden;">
+            <%= form_tag user_sessions_path, method: :post do %>
+      <div class="field">
+        <%= label_tag :email %>
+        <%= text_field_tag :email %>
+        <br/>
+      </div>
+      <div class="field">
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
+        <br/>
+      </div>
+      <div class="actions">
+        <%= submit_tag "Login" %>
+      </div>
+    <% end %>
+    
+    </div> <!-- content -->
+
+    <%= render "static_pages/footer" %>
+</body>
+</html>

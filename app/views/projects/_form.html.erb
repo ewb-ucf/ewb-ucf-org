@@ -1,0 +1,53 @@
+<%= form_for(@project, html: {multipart: false}) do |p| %>
+  <ul> <% @project.errors.full_messages.each do |error| %>  
+  <li><%= error %></li>
+  <% end %>
+</ul>
+  
+<h3>What is the title of this project?</h3>
+<p>
+  <%= p.label :title %><br />
+  <%= p.text_field :title %>
+</p>
+
+<h3>What team is working on this project?</h3>
+<p>
+  <% if @teams == [] %>
+    <%# McKinnley Rose. Fix this shit. %>
+    <strong>WARNING: A team must be created first</strong>
+  <% end %>
+  <%# List the teams and check the teams available%>
+  <% @teams.each do |t| %>
+    <%= p.radio_button(:team_id, t.id) %> 
+    <%= label :team_id, t.name %><br/>
+  <% end %>
+</p>
+
+<h3>What is the general mission of this project?</h3>
+<p>
+  <%= p.label :about %><br />
+  <%= p.text_area :about %>
+</p>
+
+<h3>Describe more specifically what the project entails?</h3>
+<p>
+  <%= p.label :description %><br />
+  <%= p.text_area :description %>
+</p>
+ 
+<h3>What is the current status of the project?</h3>
+<p>
+  <%= p.label :status %><br />
+  <%= p.text_area :status %>
+</p>
+
+<p>
+  <%= p.label :image, "Project logo" %><br />
+  <%= p.file_field :image %>
+</p>
+
+<p>
+  <%= p.submit %>
+</p>
+
+<% end %>
