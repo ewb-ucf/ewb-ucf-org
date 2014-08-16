@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 ### Custom added GEMS!####
 
+#Heroku req'd this gem
+gem 'rails_12factor'
+
 #Gem for user login/out
 gem 'sorcery'
 
@@ -27,6 +30,7 @@ gem 'hirb'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 
+#Heroku req's postgres
 group :production do
 	gem 'pg'
 end
