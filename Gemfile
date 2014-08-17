@@ -5,6 +5,10 @@ source 'https://rubygems.org'
 #Heroku req'd this gem
 gem 'rails_12factor'
 
+group :development, :test do
+	gem 'foreman'
+end
+
 #Gem for user login/out
 gem 'sorcery'
 

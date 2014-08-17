@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 # Home Page
 root 'static_pages#index'
 
+match '/contacts',  to: 'contacts#new', via: 'get'
+resources "contacts", only: [:new, :create]
+
 resources :donations
 
 #Alias the URLS to people "people/" instead of "teams/"
