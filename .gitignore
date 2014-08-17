@@ -37,5 +37,6 @@ Icon
 .Trashes
 
 # NOTE this holds the env variables and passwords
-*.env
+.env
+Procfile
 
