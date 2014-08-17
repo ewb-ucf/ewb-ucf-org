@@ -53,9 +53,11 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
+  
+  #Tried adding this line to bug fix....didn't do shit
+  #Rails.application.routes.default_url_options[:host] = 'ewb-ucf-org.herokuapp.com'
 
   # Mail configuratons
-  Rails.application.routes.default_url_options[:host] = 'ewb-ucf-org.herokuapp.com'
   config.action_mailer.default_url_options = { :host => 'ewb-ucf-org.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
