@@ -31,9 +31,9 @@ gem 'hirb'
 gem 'rails', '4.1.1'
 
 #Heroku req's postgres
-group :production do
-	gem 'pg'
-end
+#group :production do
+#	gem 'pg'
+#end
 	
 group :development do
 	gem 'sqlite3'
