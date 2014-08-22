@@ -21,6 +21,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   config.action_mailer.delivery_method = :smtp
+  #NOTE: FOR THESE ENV's to work they must be set locally
+  # For example type >>export GMAIL_USERNAME="myname@gmail.com"
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
     port: 587,
