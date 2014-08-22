@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 ### Custom added GEMS!####
 
+#Rails Version
+ruby '2.1.2'
+
 #Heroku req'd this gem
 gem 'rails_12factor'
 
