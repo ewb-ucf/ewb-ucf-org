@@ -5,6 +5,10 @@ source 'https://rubygems.org'
 #Heroku req'd this gem
 gem 'rails_12factor'
 
+group :development, :test do
+	gem 'foreman'
+end
+
 #Gem for user login/out
 gem 'sorcery'
 
@@ -75,3 +79,5 @@ gem 'spring',        group: :development
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+#Some nonsense for testing purposes
