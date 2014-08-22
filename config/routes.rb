@@ -6,7 +6,8 @@ root 'static_pages#index'
 match '/contacts',  to: 'contacts#new', via: 'get'
 resources "contacts", only: [:new, :create]
 
-resources :donations
+match '/donate',  to: 'donations#new', via: 'get'
+resources :donations, only: [:new, :create]
 
 #Alias the URLS to people "people/" instead of "teams/"
 resources :teams, :path => "people" do
@@ -26,6 +27,9 @@ resources :users do
   resources :blogs
 end
 
+#Events
+match '/calendar',  to: 'events#index', via: 'get'
+
 #Add user sessions resource with only specific actions
 resources :user_sessions, only: [:new, :create, :destroy]
 
@@ -41,8 +45,9 @@ resources "contacts", only: [:new, :create]
 
 match '/media', to:'static_pages#under_construction', via:'get' 
 
-#Make this page DYNAMIC MCKINNLEY ROSE
+#These pages should be made dynamic eventually
 get 'partners' => 'static_pages#partners'
+
 
 #=======================================================================================#
   # The priority is based upon order of creation: first created -> highest priority.
