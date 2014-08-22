@@ -39,5 +39,4 @@ Icon
 # NOTE this holds the env variables and passwords
 .env
 Procfile
-vendor/bundle/*
-
+vendor/bundle
