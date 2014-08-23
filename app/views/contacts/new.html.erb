@@ -9,6 +9,7 @@
     <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
       <%= f.input :name, :required => true %>
       <%= f.input :email, :required => true %>
+      <%= f.input :subject, :placeholder => "bug fix, applications, etc", :required => true %>
       <%= f.input :message, :as => :text, :required => true %>
 
       <div class= "hidden">

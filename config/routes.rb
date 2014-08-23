@@ -6,6 +6,9 @@ root 'static_pages#index'
 match '/contacts',  to: 'contacts#new', via: 'get'
 resources "contacts", only: [:new, :create]
 
+# Pass this variable with parameter for bugfix
+match '/reportbug',  to: 'contacts#new', via: 'get'
+
 match '/donate',  to: 'donations#new', via: 'get'
 resources :donations, only: [:new, :create]
 
