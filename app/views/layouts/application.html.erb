@@ -18,7 +18,7 @@
 		<% else %>
 		  <%= link_to "Login", login_path %> or <%= link_to "Sign Up", new_user_path %>
 		<% end %>
-		<br/><%= link_to "Report a bug!", reportbug_path %>
+		<br/>
 	</h6>
 
     <%- flash.each do |key, msg| -%>
@@ -33,8 +33,10 @@
     <%= render "static_pages/nav" %>
 
 	<%= yield %>
-
+    
+    <div class="container-fluid content-last"></div>
     <%= render "static_pages/footer" %>
+    
 
 </body>
 </html>

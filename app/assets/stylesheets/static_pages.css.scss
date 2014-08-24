@@ -30,6 +30,7 @@ html{
     -moz-background-size:       cover;
     -o-background-size:         cover;
     background-size:            cover;
+    position: absolute;
 }
 
 body{
@@ -38,7 +39,7 @@ body{
     width:                      100%;
     height:                     100%;
     margin:                     0px 0px;
-
+    background:                 rgba(0,0,0,0);
 }
 
 
@@ -93,8 +94,11 @@ body{
     width:                      100%;
     background:                 rgba(255, 255, 255, .9);
     color:                      #333;   
+    display: block;
     /*box-shadow:                 5px 5px 15px rgba(0, 0, 0, 0.7); */
 }
+
+
 
 .brown {
     background:                 #372a0d;
@@ -169,12 +173,13 @@ footer.home{
     position:                   fixed;
     top:                        79%;
     padding:                    0.5% 11%;
+    color:                      #333;
 }
 
 footer.not-home{
     display:                    block;
     width:                      100%;
-    height:                     3%;
+    height:                     auto;
     min-height:                 40px;
     position:                   absolute;
     bottom:                     0px;
@@ -213,6 +218,8 @@ span.software{
 }
 
 */
+
+a:hover {background: rgba(0,0,0,0);}
 
 /*****************************************************************************
  *****************************************************************************
@@ -275,10 +282,10 @@ nav li, nav li a{
 }
 
 nav li{
-    height:                     45%;
+    height:                     100%;
     margin:                     auto;
     margin-right:               5px;
-    padding:                    3% 0px 2% 0px;
+    padding:                    2% 0px 2% 0px;
     transition:                 all 1s;
     -webkit-transition:         all 1s;
     border:                     2px solid rgba(255,255,255,0);
@@ -293,7 +300,7 @@ nav li a{
 nav li:hover{
     margin:                     auto;
     margin-right:               5px;
-    padding:                    3% 15px 2% 15px;
+    padding:                    2% 15px 2% 15px;
     border-right:               2px solid #c2cd23;
     border-left:                2px solid #c2cd23;
     border-radius:              15px;
@@ -358,7 +365,7 @@ nav.not-home ul li:hover ul,
 nav.not-home ul ul:hover{
     display:                    block;
     position:                   absolute;
-    top:                        70px;
+    top:                        60px;
     left:                       0px;
     padding:                    0px 0px 0px 0px;
     border-top:                 2px solid rgba(255,0,0,0);
@@ -789,4 +796,25 @@ tr{
 td{
     padding:                    0px 20px;
     text-align:                 center;
+}
+
+
+.goddamnit-i-hate-special-cases {
+    position:                   absolute; 
+}
+
+.goddamnit-i-hate-special-cases-home a {
+    color:                      #333;
+}
+
+.goddamnit-i-hate-special-cases-not-home a{
+    color:                      #fff; 
+    float:                      right;
+}
+
+.goddamnit-i-hate-special-cases-home a:hover {
+    background:                 rgba(0,0,0,0);
+}
+.goddamnit-i-hate-special-cases-not-home a:hover {
+    background:                 rgba(0,0,0,0);
 }

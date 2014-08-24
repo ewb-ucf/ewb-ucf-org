@@ -3,6 +3,35 @@
     footer_class = current_page?('/') ? 'home' : 'not-home' 
 %>
 
-<footer class="<%= footer_class %>">
-    Copyright &copy <%= Time.new.year %> by Engineers Without Borders - UCF 
-</footer>
+<!-- this really should be necesary -->
+<div style="height: 60px"></div>
+
+
+<% if current_page?('/') %>
+    <footer class="<%= footer_class %>">
+            Copyright &copy <%= Time.new.year %> by Engineers Without Borders - UCF 
+
+        <div class="goddamnit-i-hate-special-cases-<%= current_page?('/') ? 'home' : 'not-home'%>">
+            <%= link_to "Report a bug!", reportbug_path %>
+        </div>
+    </footer>
+
+<% else%>
+
+    <footer class="<%= footer_class %>">
+        <div class="col-md-4" style="text-align: left">
+            Engineering 1, #144<br>
+            4000 Central Florida Blvd. 
+            Orlando, FL 32816
+        </div>
+
+        <div class="col-md-4" style="text-align: center;"> 
+            Copyright &copy <%= Time.new.year %> <br> Engineers Without Borders - UCF 
+        </div>
+
+        <div class="col-md-4 goddamnit-i-hate-special-cases-<%= current_page?('/') ? 'home' : 'not-home'%>">
+            <br><%= link_to "Report a bug!", reportbug_path %>
+        </div>
+    </footer>
+
+<% end %>
