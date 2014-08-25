@@ -6,17 +6,16 @@
     </title>
 </head>
 <body>
-    <div class="container-fluid precontent">Calendar</div>
+    <div class="container-fluid precontent">
+        Calendar
 
-    <%= render "static_pages/nav" %>
-
-    <div id="precontent">
-            <% if can? :create, Event %>
-                <p><%=link_to "Create New Event", new_event_path %></br></p>
-            <% end %>
+        <% if can? :create, Event %>
+            <p><%=link_to "Create New Event", new_event_path %></br></p>
+        <% end %>
     </div>
 
-    <div id="content">
+
+    <div class="container-fluid content">
 
     <iframe src="https://www.google.com/calendar/embed?src=oj71g9qi5fa6jn8bji7uh9ld1c%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 

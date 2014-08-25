@@ -6,26 +6,22 @@
 	</title>
 </head>
 <body>
-	<div class="container-fluid precontent">Insert Text Here</div>
-
-	<%= render "static_pages/nav" %>
-
 	<%#If current user role is user then they are the only ones that can see their own profile %>
 	<%#but they can read everyones%>
 	<% if @user.role == 'user' %>
 		<% if current_user == @user %>
-			<div id="precontent">
+			<div class="container-fluid precontent">
 		 		Welcome <h4 class="sub"><%= @user.username%></h4>
 				<p>Become a <% link_to "member" %> and get a free profile page and blog!</p>
 			</div>
 		<% else %>
-			<div id="precontent">
+			<div class="container-fluid precontent">
 		 		User: <h4 class="sub"><%= @user.username%></h4>
 			</div>
 		<% end %>
 	<% else %>
 		<%#If current user role is member then they can edit their own profile and see everyones%>
-	 	<div id="precontent">
+	 	<div class="container-fluid precontent">
 	 		<%= @user.firstname %> <%= @user.lastname%>'s Profile<br/>
 	 		<h4 class="sub"><%= @user.major%>, <%= @user.minor%></h4>
 
@@ -41,7 +37,7 @@
 	 	<% end %>
 	 </div>
 
-	<div id="content">
+	<div class="container-fluid content">
 		
 		<h2 style="margin: 0px 0px 10px 0px; float: left;">
 			Bio
